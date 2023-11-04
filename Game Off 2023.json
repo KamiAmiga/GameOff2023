@@ -143,7 +143,7 @@
         "alwaysLoaded": false,
         "file": "assets/playerTest.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/playerTest.png\",\"extension\":\".png\"}",
         "name": "assets\\playerTest.png",
         "smoothed": true,
         "userAdded": true
@@ -163,6 +163,15 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\platformTest.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite4.png\"}",
+        "name": "NewSprite",
         "smoothed": true,
         "userAdded": false
       }
@@ -644,6 +653,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Weapon",
+          "persistentUuid": "6c58529e-676f-4066-b40a-a8e651541071",
+          "width": 0,
+          "x": 790,
+          "y": 156,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -679,17 +703,24 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\playerTest",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\playerTest.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Weapon",
+                          "x": 81,
+                          "y": 80
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -704,19 +735,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 1,
-                            "y": 0
+                            "x": 2,
+                            "y": 4
                           },
                           {
-                            "x": 112,
-                            "y": 0
+                            "x": 110,
+                            "y": 4
                           },
                           {
-                            "x": 112,
+                            "x": 110,
                             "y": 154
                           },
                           {
-                            "x": 1,
+                            "x": 2,
                             "y": 154
                           }
                         ]
@@ -757,7 +788,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\platformTest.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Switcher",
+                          "x": 285,
+                          "y": 0
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -825,7 +862,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\platformTest.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Switcher",
+                          "x": 15,
+                          "y": 0
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -1324,6 +1367,67 @@
               "width": 256
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Weapon",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 20
+                          },
+                          {
+                            "x": 53,
+                            "y": 20
+                          },
+                          {
+                            "x": 53,
+                            "y": 43
+                          },
+                          {
+                            "x": 11,
+                            "y": 43
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1364,6 +1468,9 @@
           },
           {
             "objectName": "BackToMenuButton"
+          },
+          {
+            "objectName": "Weapon"
           }
         ]
       },
@@ -1394,22 +1501,6 @@
                 "value": "Cache"
               },
               "parameters": [
-                "RightPlatformSwitcher"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "LeftPlatformSwitcher"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
                 "PlatformBottomLimit"
               ]
             },
@@ -1422,6 +1513,60 @@
                 "Opacity",
                 "=",
                 "200"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "RightPlatformSwitcher",
+                "=",
+                "RightPlatform.PointX(\"Switcher\")",
+                "=",
+                "RightPlatform.PointY(\"Switcher\") - RightPlatformSwitcher.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "LeftPlatformSwitcher",
+                "=",
+                "LeftPlatform.PointX(\"Switcher\") - LeftPlatformSwitcher.Width()",
+                "=",
+                "LeftPlatform.PointY(\"Switcher\") - LeftPlatformSwitcher.Height()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Weapon",
+                "=",
+                "Player.PointX(\"Weapon\")",
+                "=",
+                "Player.PointY(\"Weapon\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "Weapon",
+                "CursorX()",
+                "CursorY()",
+                "0",
+                ""
               ]
             }
           ]
@@ -1539,38 +1684,124 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "PlatformEnd",
-                "Player",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "Player",
-                "PlatformEnd",
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
+          "creationTime": 0,
+          "name": "Player movement",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "PlatformEnd",
+                    "Player",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SeparateFromObjects"
+                  },
+                  "parameters": [
+                    "Player",
+                    "PlatformEnd",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "<",
+                    "CursorX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flippable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Weapon",
+                    "Flippable",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    ">",
+                    "CursorX()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Flippable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Weapon",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 147,
+          "colorG": 170,
+          "colorR": 71,
           "creationTime": 0,
           "name": "Platforms switchers",
           "source": "",
@@ -1752,9 +1983,9 @@
           "parameters": []
         },
         {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
+          "colorB": 0,
+          "colorG": 0,
+          "colorR": 0,
           "creationTime": 0,
           "name": "Game Over",
           "source": "",
