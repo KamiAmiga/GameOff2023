@@ -859,8 +859,8 @@
           "name": "Enemy03Spawn",
           "persistentUuid": "c97736fd-f005-46d2-ad42-68366f31cd6e",
           "width": 0,
-          "x": 1074,
-          "y": 821,
+          "x": 912,
+          "y": 1117,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -874,8 +874,8 @@
           "name": "Enemy03Spawn",
           "persistentUuid": "d075ac5f-d8a1-4445-8b9e-a3041486982b",
           "width": 0,
-          "x": 219,
-          "y": 808,
+          "x": 324,
+          "y": 1128,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -2108,6 +2108,12 @@
               "name": "canShootLazer",
               "type": "boolean",
               "value": false
+            },
+            {
+              "folded": true,
+              "name": "spawnSide",
+              "type": "string",
+              "value": "right"
             }
           ],
           "effects": [],
@@ -2156,8 +2162,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 325,
+                        "y": 468
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2823,6 +2829,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Player damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2835,7 +2842,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "Enemy01",
+                        "enemies",
                         "Player",
                         "",
                         "",
@@ -3030,6 +3037,7 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
+              "folded": true,
               "name": "Platforms switchers",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3413,6 +3421,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3713,6 +3722,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3988,7 +3998,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "disabled": true,
               "name": "Enemy03 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4028,7 +4037,7 @@
                         "",
                         "\"Enemy03Spawn\"",
                         ">",
-                        "10"
+                        "5"
                       ]
                     },
                     {
@@ -4038,6 +4047,17 @@
                       "parameters": [
                         "",
                         "Enemy03Spawn"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SceneInstancesCount"
+                      },
+                      "parameters": [
+                        "",
+                        "Enemy03",
+                        "<",
+                        "1"
                       ]
                     }
                   ],
@@ -4049,8 +4069,8 @@
                       "parameters": [
                         "",
                         "Enemy03",
-                        "Enemy03Spawn.X()",
-                        "Enemy03Spawn.Y()",
+                        "Enemy03Spawn.CenterX()",
+                        "Enemy03Spawn.CenterY()",
                         ""
                       ]
                     },
@@ -4062,34 +4082,16 @@
                         "",
                         "\"Enemy03Spawn\""
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
+                    },
                     {
                       "type": {
-                        "value": "PosX"
+                        "value": "AddForceAL"
                       },
                       "parameters": [
                         "Enemy03",
-                        ">",
-                        "ScreenWidth()/2 - Enemy03.Width()/2"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AddForceVersPos"
-                      },
-                      "parameters": [
-                        "Enemy03",
-                        "RightPlatform.CenterX()",
-                        "ScreenHeight()-50",
-                        "100",
-                        ""
+                        "270",
+                        "200",
+                        "1"
                       ]
                     }
                   ]
@@ -4099,26 +4101,31 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "PosX"
+                        "value": "CenterY"
                       },
                       "parameters": [
                         "Enemy03",
                         "<",
-                        "ScreenWidth()/2"
+                        "ScreenHeight() - 100"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "AddForceVersPos"
+                        "value": "Arreter"
                       },
                       "parameters": [
-                        "Enemy03",
-                        "LeftPlatform.CenterX()",
-                        "ScreenHeight()-50",
-                        "100",
-                        ""
+                        "Enemy03"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
                       ]
                     }
                   ]
@@ -4131,6 +4138,57 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "name": "Enemy03 attack",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\"",
+                        ">",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "\"141;44;44\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Opacity",
+                        "=",
+                        "50"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 16,
+              "colorG": 97,
+              "colorR": 224,
+              "creationTime": 0,
+              "folded": true,
               "name": "Enemies damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4144,7 +4202,7 @@
                       },
                       "parameters": [
                         "PlayerBullet",
-                        "Enemy01",
+                        "enemies",
                         "",
                         "",
                         ""
@@ -4154,19 +4212,10 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "PlayerBullet",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Health::Health::Hit"
                       },
                       "parameters": [
-                        "Enemy01",
+                        "enemies",
                         "Health",
                         "1",
                         "",
@@ -4184,7 +4233,7 @@
                         "value": "Health::Health::IsDead"
                       },
                       "parameters": [
-                        "Enemy01",
+                        "enemies",
                         "Health",
                         ""
                       ]
@@ -4196,74 +4245,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Enemy01",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "PlayerBullet",
-                        "Enemy02",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "PlayerBullet",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Health::Health::Hit"
-                      },
-                      "parameters": [
-                        "Enemy02",
-                        "Health",
-                        "1",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Health::Health::IsDead"
-                      },
-                      "parameters": [
-                        "Enemy02",
-                        "Health",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Enemy02",
+                        "enemies",
                         ""
                       ]
                     }
