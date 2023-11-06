@@ -237,6 +237,42 @@
         "name": "assets\\enemy2projectile.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite7.png\"}",
+        "name": "NewSprite6",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/NewSprite8.png\",\"extension\":\".png\"}",
+        "name": "assets\\NewSprite8.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -475,7 +511,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.41943397827590595,
+        "zoomFactor": 0.2550455473354341,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2328,9 +2364,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "DestroyOutside",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             },
             {
               "name": "RepeatTimer",
@@ -2382,6 +2418,103 @@
                           {
                             "x": 1,
                             "y": 54
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Enemy03Attack",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite8",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 160,
+                        "y": 1200
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 672.5
+                          },
+                          {
+                            "x": 320,
+                            "y": 669.5
+                          },
+                          {
+                            "x": 320,
+                            "y": 1200
+                          },
+                          {
+                            "x": 0,
+                            "y": 1200
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\NewSprite8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 160,
+                        "y": 1200
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 320,
+                            "y": 0
+                          },
+                          {
+                            "x": 320,
+                            "y": 1200
+                          },
+                          {
+                            "x": 0,
+                            "y": 1200
                           }
                         ]
                       ]
@@ -2455,6 +2588,9 @@
           },
           {
             "objectName": "Enemy02Bullet"
+          },
+          {
+            "objectName": "Enemy03Attack"
           }
         ]
       },
@@ -2487,7 +2623,7 @@
                   },
                   "parameters": [
                     "",
-                    ".75",
+                    ".5",
                     "",
                     ""
                   ]
@@ -3264,7 +3400,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy01 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4118,14 +4253,37 @@
                       "parameters": [
                         "Enemy03"
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Enemy03Attack\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Arret"
+                          },
+                          "parameters": [
+                            "Enemy03"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Enemy03Attack\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -4155,27 +4313,105 @@
                         ">",
                         "3"
                       ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Health",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "ChangeColor"
+                        "value": "Create"
                       },
                       "parameters": [
-                        "Enemy03",
-                        "\"141;44;44\""
+                        "",
+                        "Enemy03Attack",
+                        "Enemy03.BoundingBoxLeft()",
+                        "0",
+                        ""
                       ]
                     },
                     {
                       "type": {
-                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                        "value": "PauseTimer"
                       },
                       "parameters": [
-                        "Enemy03",
-                        "Opacity",
-                        "=",
-                        "50"
+                        "",
+                        "\"Enemy03Attack\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Enemy03Attack",
+                        "Animation"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemy03Attack",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Enemy03Attack",
+                        "Player",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "5",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -4188,7 +4424,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemies damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4246,6 +4481,41 @@
                       },
                       "parameters": [
                         "enemies",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Health",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemy03Attack",
                         ""
                       ]
                     }
