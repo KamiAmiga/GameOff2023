@@ -141,15 +141,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/playerTest.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/playerTest.png\",\"extension\":\".png\"}",
-        "name": "assets\\playerTest.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/enemyTest.png",
         "kind": "image",
         "metadata": "",
@@ -168,15 +159,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite4.png\"}",
-        "name": "NewSprite",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -190,15 +172,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite5",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Hit.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Hit",
         "smoothed": true,
         "userAdded": true
       },
@@ -240,24 +213,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite7.png\"}",
-        "name": "NewSprite6",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
-        "name": "NewSprite7",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite8.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/NewSprite8.png\",\"extension\":\".png\"}",
@@ -273,6 +228,60 @@
         "name": "NewSprite8",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerWeapon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerWeapon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerWalk00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerWalk00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerWalk01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerWalk01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerWalk02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerWalk02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerPlayerIdle00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerPlayerIdle00.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerHit00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerHit00.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -512,7 +521,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.2550455473354341,
-        "windowMask": false
+        "windowMask": true
       },
       "objectsGroups": [
         {
@@ -560,22 +569,6 @@
           "x": 772,
           "y": 393,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 138,
-          "layer": "",
-          "name": "Player",
-          "persistentUuid": "fa4cdb79-5c07-48e4-8a66-2f78189afa7e",
-          "width": 100,
-          "x": 866,
-          "y": 233,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -916,11 +909,26 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Player",
+          "persistentUuid": "6d8a9d22-ada3-4a0c-b9b3-5a373d830791",
+          "width": 0,
+          "x": 920,
+          "y": 321,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
           "type": "Sprite",
@@ -979,7 +987,7 @@
           ],
           "animations": [
             {
-              "name": "Moving",
+              "name": "Idle",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -989,18 +997,18 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\playerTest.png",
+                      "image": "assets\\playerPlayerIdle00.png",
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 81,
-                          "y": 80
+                          "x": 88,
+                          "y": 84
                         }
                       ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 74,
+                        "y": 135
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1011,20 +1019,200 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 4
+                            "x": 7,
+                            "y": 9
                           },
                           {
-                            "x": 110,
-                            "y": 4
+                            "x": 123,
+                            "y": 9
                           },
                           {
-                            "x": 110,
-                            "y": 154
+                            "x": 123,
+                            "y": 143
                           },
                           {
-                            "x": 2,
-                            "y": 154
+                            "x": 7,
+                            "y": 143
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Walk",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\playerWalk00.png",
+                      "points": [
+                        {
+                          "name": "Weapon",
+                          "x": 88,
+                          "y": 84
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 74,
+                        "y": 135
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 137
+                          },
+                          {
+                            "x": 7,
+                            "y": 137
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\playerWalk01.png",
+                      "points": [
+                        {
+                          "name": "Weapon",
+                          "x": 88,
+                          "y": 86
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 74,
+                        "y": 137
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 139
+                          },
+                          {
+                            "x": 7,
+                            "y": 139
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\playerWalk02.png",
+                      "points": [
+                        {
+                          "name": "Weapon",
+                          "x": 88,
+                          "y": 84
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 74,
+                        "y": 135
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 137
+                          },
+                          {
+                            "x": 7,
+                            "y": 137
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\playerWalk01.png",
+                      "points": [
+                        {
+                          "name": "Weapon",
+                          "x": 88,
+                          "y": 86
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 74,
+                        "y": 137
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 9
+                          },
+                          {
+                            "x": 123,
+                            "y": 139
+                          },
+                          {
+                            "x": 7,
+                            "y": 139
                           }
                         ]
                       ]
@@ -1044,18 +1232,18 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Hit",
+                      "image": "assets\\playerHit00.png",
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 81,
-                          "y": 80
+                          "x": 88,
+                          "y": 84
                         }
                       ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 74,
+                        "y": 135
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1066,20 +1254,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 4
+                            "x": 7,
+                            "y": 9
                           },
                           {
-                            "x": 110,
-                            "y": 4
+                            "x": 123,
+                            "y": 9
                           },
                           {
-                            "x": 110,
-                            "y": 154
+                            "x": 123,
+                            "y": 143
                           },
                           {
-                            "x": 2,
-                            "y": 154
+                            "x": 7,
+                            "y": 143
                           }
                         ]
                       ]
@@ -1806,18 +1994,18 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
+                      "image": "assets\\playerWeapon.png",
                       "points": [
                         {
                           "name": "BulletPoint",
-                          "x": 51,
-                          "y": 25
+                          "x": 121.5,
+                          "y": 8
                         }
                       ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 32,
-                        "y": 32
+                        "x": 70,
+                        "y": 22
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1828,20 +2016,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11,
-                            "y": 20
+                            "x": 1,
+                            "y": 0
                           },
                           {
-                            "x": 53,
-                            "y": 20
+                            "x": 130,
+                            "y": 0
                           },
                           {
-                            "x": 53,
-                            "y": 43
+                            "x": 130,
+                            "y": 55
                           },
                           {
-                            "x": 11,
-                            "y": 43
+                            "x": 1,
+                            "y": 55
                           }
                         ]
                       ]
@@ -2445,7 +2633,7 @@
                 {
                   "looping": false,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 1,
+                  "timeBetweenFrames": 0.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -2518,6 +2706,23 @@
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\NewSprite8.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 160,
+                        "y": 1200
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -2600,6 +2805,7 @@
           "colorG": 155,
           "colorR": 155,
           "creationTime": 0,
+          "disabled": true,
           "name": "Debug helpers",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2689,11 +2895,65 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Player movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Walk\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -2756,7 +3016,7 @@
                         "Player",
                         "Animation",
                         "=",
-                        "\"Moving\""
+                        "\"Idle\""
                       ]
                     },
                     {
@@ -2872,7 +3132,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Weapon movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -2965,7 +3224,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Player damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3556,7 +3814,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3857,7 +4114,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4338,15 +4594,6 @@
                         "0",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "PauseTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Enemy03Attack\""
-                      ]
                     }
                   ]
                 },
@@ -4371,6 +4618,16 @@
                       "parameters": [
                         "",
                         "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "Enemy03Attack",
+                        "=",
+                        "0"
                       ]
                     },
                     {
@@ -4503,20 +4760,20 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "RemoveTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Enemy03Attack\""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Delete"
                       },
                       "parameters": [
                         "Enemy03Attack",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
                       ]
                     }
                   ]
@@ -4626,48 +4883,65 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "RetryButton",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PushScene"
+                    "value": "LayerVisible"
                   },
                   "parameters": [
                     "",
-                    "\"Main\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                  },
-                  "parameters": [
-                    "BackToMenuButton",
-                    ""
+                    "\"GameOver\""
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"StartScreen\"",
-                    "yes"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "RetryButton",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PushScene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Main\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "BackToMenuButton",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"StartScreen\"",
+                        "yes"
+                      ]
+                    }
                   ]
                 }
               ]
