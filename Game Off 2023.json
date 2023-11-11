@@ -141,30 +141,12 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/enemyTest.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\enemyTest.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/platformTest.png",
         "kind": "image",
         "metadata": "",
         "name": "assets\\platformTest.png",
         "smoothed": true,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite4",
-        "smoothed": true,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -231,15 +213,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/playerWeapon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\playerWeapon.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/playerWalk00.png",
         "kind": "image",
         "metadata": "",
@@ -282,6 +255,87 @@
         "name": "assets\\playerHit00.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerWeapon00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerWeapon00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerBullet00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\playerBullet00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01Idle00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01Idle00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01Idle01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01Idle01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01GrabKnives00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01GrabKnives00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01PrepareAttack00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01PrepareAttack00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01PrepareAttack01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01PrepareAttack01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01Attacking00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01Attacking00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy01Attacking01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy01Attacking01.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -750,21 +804,6 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Weapon",
-          "persistentUuid": "6c58529e-676f-4066-b40a-a8e651541071",
-          "width": 0,
-          "x": 790,
-          "y": 156,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
           "name": "Enemy01Spawn",
           "persistentUuid": "864c4fbb-7c81-4831-8255-e87d5d4c70e7",
           "width": 0,
@@ -924,6 +963,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Weapon",
+          "persistentUuid": "cc416cd3-84ae-4529-bd31-220e6001d8ea",
+          "width": 0,
+          "x": 850,
+          "y": 163,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "PlayerLife",
+          "persistentUuid": "081a4346-e0d5-440f-9dc0-de85c7ed419c",
+          "width": 0,
+          "x": 74,
+          "y": 599,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -939,7 +1008,7 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 5,
+              "Health": 8,
               "CurrentHealth": 0,
               "MaxHealth": 0,
               "DamageCooldown": 0,
@@ -1001,8 +1070,8 @@
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 88,
-                          "y": 84
+                          "x": 85,
+                          "y": 76
                         }
                       ],
                       "originPoint": {
@@ -1055,8 +1124,8 @@
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 88,
-                          "y": 84
+                          "x": 85,
+                          "y": 76
                         }
                       ],
                       "originPoint": {
@@ -1097,8 +1166,8 @@
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 88,
-                          "y": 86
+                          "x": 85,
+                          "y": 76
                         }
                       ],
                       "originPoint": {
@@ -1139,8 +1208,8 @@
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 88,
-                          "y": 84
+                          "x": 85,
+                          "y": 76
                         }
                       ],
                       "originPoint": {
@@ -1181,8 +1250,8 @@
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 88,
-                          "y": 86
+                          "x": 85,
+                          "y": 76
                         }
                       ],
                       "originPoint": {
@@ -1236,7 +1305,7 @@
                       "points": [
                         {
                           "name": "Weapon",
-                          "x": 88,
+                          "x": 86,
                           "y": 84
                         }
                       ],
@@ -1432,7 +1501,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy01",
           "type": "Sprite",
@@ -1450,8 +1519,8 @@
             {
               "name": "BoidsMovement",
               "type": "BoidsMovement::BoidsMovement",
-              "MaxSpeed": 100,
-              "MaxAcceleration": 100,
+              "MaxSpeed": 180,
+              "MaxAcceleration": 120,
               "ShouldRotate": false,
               "CohesionRadius": 64,
               "AlignmentRadius": 48,
@@ -1460,6 +1529,22 @@
               "AlignmentWeight": 1,
               "SeparationWeight": 2,
               "TrajectoryDistance": 2
+            },
+            {
+              "name": "EllipseMovement",
+              "type": "EllipseMovement::EllipseMovement",
+              "RadiusX": 5,
+              "RadiusY": 20,
+              "LoopDuration": 2,
+              "InitialTurningLeft": false,
+              "InitialDirectionAngle": 0,
+              "ShouldRotate": false,
+              "RotationOffset": 0,
+              "CenterX": 0,
+              "CenterY": 0,
+              "MovementAngle": 0,
+              "OldX": 0,
+              "OldY": 0
             },
             {
               "name": "Health",
@@ -1492,16 +1577,16 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Idle",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.24,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemyTest.png",
+                      "image": "assets\\enemy01Idle00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1517,20 +1602,272 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 1
+                            "x": 43,
+                            "y": 49
                           },
                           {
-                            "x": 127,
-                            "y": 1
+                            "x": 135,
+                            "y": 49
                           },
                           {
-                            "x": 127,
-                            "y": 81
+                            "x": 135,
+                            "y": 130
                           },
                           {
-                            "x": 2,
-                            "y": 81
+                            "x": 43,
+                            "y": 130
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy01Idle01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 65,
+                        "y": 41
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 43,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 130
+                          },
+                          {
+                            "x": 43,
+                            "y": 130
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "grabKnives",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.12,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy01GrabKnives00.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 65,
+                        "y": 41
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 43,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 130
+                          },
+                          {
+                            "x": 43,
+                            "y": 130
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prepareAttack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.24,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy01PrepareAttack00.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 65,
+                        "y": 41
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 43,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 130
+                          },
+                          {
+                            "x": 43,
+                            "y": 130
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy01PrepareAttack01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 65,
+                        "y": 41
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 43,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 130
+                          },
+                          {
+                            "x": 43,
+                            "y": 130
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attacking",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.16,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy01Attacking00.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 65,
+                        "y": 41
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 43,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 130
+                          },
+                          {
+                            "x": 43,
+                            "y": 130
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy01Attacking01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 65,
+                        "y": 41
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 43,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 49
+                          },
+                          {
+                            "x": 135,
+                            "y": 130
+                          },
+                          {
+                            "x": 43,
+                            "y": 130
                           }
                         ]
                       ]
@@ -1954,7 +2291,7 @@
             {
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
-              "FireCooldown": 0.1,
+              "FireCooldown": 0.15,
               "HasJustFired": false,
               "FiringArc": 45,
               "BulletQuantity": 1,
@@ -1994,42 +2331,42 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\playerWeapon.png",
+                      "image": "assets\\playerWeapon00.png",
                       "points": [
                         {
                           "name": "BulletPoint",
-                          "x": 121.5,
-                          "y": 8
+                          "x": 79.5,
+                          "y": 15
                         }
                       ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 70,
-                        "y": 22
+                        "x": 39,
+                        "y": 14
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 32,
+                        "y": 24
                       },
                       "customCollisionMask": [
                         [
                           {
                             "x": 1,
-                            "y": 0
+                            "y": 1
                           },
                           {
-                            "x": 130,
-                            "y": 0
+                            "x": 95,
+                            "y": 1
                           },
                           {
-                            "x": 130,
-                            "y": 55
+                            "x": 95,
+                            "y": 48
                           },
                           {
                             "x": 1,
-                            "y": 55
+                            "y": 48
                           }
                         ]
                       ]
@@ -2067,12 +2404,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
+                      "image": "assets\\playerBullet00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 8,
-                        "y": 8
+                        "x": 6.5,
+                        "y": 8.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2083,19 +2420,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 2
+                            "x": 1,
+                            "y": 1
                           },
                           {
-                            "x": 14,
-                            "y": 2
+                            "x": 40,
+                            "y": 1
                           },
                           {
-                            "x": 14,
+                            "x": 40,
                             "y": 14
                           },
                           {
-                            "x": 2,
+                            "x": 1,
                             "y": 14
                           }
                         ]
@@ -2729,6 +3066,27 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "PlayerLife",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2796,6 +3154,9 @@
           },
           {
             "objectName": "Enemy03Attack"
+          },
+          {
+            "objectName": "PlayerLife"
           }
         ]
       },
@@ -2877,6 +3238,17 @@
                 "Opacity",
                 "=",
                 "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "PlayerLife",
+                "Text",
+                "=",
+                "ToString(Player.Health::Health())"
               ]
             }
           ]
@@ -3082,6 +3454,16 @@
                             "Flippable",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipY"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
+                            "Flippable",
+                            ""
+                          ]
                         }
                       ]
                     },
@@ -3116,6 +3498,16 @@
                           },
                           "parameters": [
                             "Weapon",
+                            "Flippable",
+                            "yes"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "FlippableCapability::FlippableBehavior::FlipY"
+                          },
+                          "parameters": [
+                            "PlayerBullet",
                             "Flippable",
                             "yes"
                           ]
@@ -3229,6 +3621,18 @@
               "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "TODO : Check player damage management in ShooterTest & PlatformerTest"
+                },
+                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3269,6 +3673,17 @@
                         "",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Hit\""
+                      ]
                     }
                   ]
                 },
@@ -3289,13 +3704,13 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                       },
                       "parameters": [
-                        "Player",
-                        "Animation",
+                        "PlayerLife",
+                        "Text",
                         "=",
-                        "\"Hit\""
+                        "ToString(Player.Health::Health())"
                       ]
                     }
                   ]
@@ -3320,7 +3735,6 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
-              "folded": true,
               "name": "Platforms movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3364,7 +3778,7 @@
                           "parameters": [
                             "LeftPlatform",
                             "0",
-                            "10",
+                            "5",
                             ""
                           ]
                         },
@@ -3375,7 +3789,7 @@
                           "parameters": [
                             "RightPlatform",
                             "0",
-                            "-10",
+                            "-5",
                             ""
                           ]
                         }
@@ -3404,7 +3818,7 @@
                           "parameters": [
                             "RightPlatform",
                             "0",
-                            "10",
+                            "5",
                             ""
                           ]
                         },
@@ -3415,7 +3829,7 @@
                           "parameters": [
                             "LeftPlatform",
                             "0",
-                            "-10",
+                            "-5",
                             ""
                           ]
                         }
@@ -3800,7 +4214,20 @@
                         "Enemy01",
                         "BoidsMovement",
                         "Player",
-                        "20",
+                        "200",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BoidsMovement::BoidsMovement::AvoidObject"
+                      },
+                      "parameters": [
+                        "Enemy01",
+                        "BoidsMovement",
+                        "PlayerBullet",
+                        "200",
+                        "2000",
                         ""
                       ]
                     }
@@ -3814,6 +4241,195 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "name": "Enemy01 attack",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Enemy01",
+                        "Player",
+                        "420",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Enemy01",
+                            "Animation",
+                            "=",
+                            "\"Idle\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy01",
+                            "Animation",
+                            "=",
+                            "\"grabKnives\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            ".2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy01",
+                            "Animation",
+                            "=",
+                            "\"prepareAttack\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Enemy01",
+                        "Player",
+                        "240",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Enemy01",
+                                "Animation",
+                                "=",
+                                "\"Idle\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Enemy01",
+                                "Animation",
+                                "=",
+                                "\"grabKnives\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::Name"
+                              },
+                              "parameters": [
+                                "Enemy01",
+                                "Animation",
+                                "=",
+                                "\"prepareAttack\""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy01",
+                            "Animation",
+                            "=",
+                            "\"Attacking\""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Enemy01",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Distance"
+                      },
+                      "parameters": [
+                        "Enemy01",
+                        "Player",
+                        "420",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy01",
+                        "Animation",
+                        "=",
+                        "\"Idle\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 16,
+              "colorG": 97,
+              "colorR": 224,
+              "creationTime": 0,
+              "disabled": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4114,6 +4730,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "disabled": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4389,6 +5006,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "disabled": true,
               "name": "Enemy03 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4552,6 +5170,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "disabled": true,
               "name": "Enemy03 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5023,6 +5642,10 @@
         {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "EllipseMovement",
+          "type": "EllipseMovement::EllipseMovement"
         },
         {
           "name": "FireBullet",
