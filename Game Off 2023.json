@@ -16,7 +16,7 @@
     "pixelsRounding": false,
     "projectUuid": "83b1718c-bbe3-4a59-9c5e-837fc3417cf3",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "",
+    "sizeOnStartupMode": "adaptHeight",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -471,6 +471,96 @@
         "name": "assets\\enemy02BombExplode05.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Appearence00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Appearence00.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Appearence01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Appearence01.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Appearence02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Appearence02.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Idle01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Idle01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Idle00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Idle00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03PrepareAttack00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03PrepareAttack00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03PrepareAttack01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03PrepareAttack01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03PrepareAttack02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03PrepareAttack02.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Attacking00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Attacking00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03LaserTest.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03LaserTest.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -728,7 +818,26 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "Enemy03SpawnSide",
+          "type": "string",
+          "value": "left"
+        },
+        {
+          "folded": true,
+          "name": "Enemy03SpawnRight",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "Enemy03SpawnX",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -1059,36 +1168,6 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Enemy03Spawn",
-          "persistentUuid": "c97736fd-f005-46d2-ad42-68366f31cd6e",
-          "width": 0,
-          "x": 912,
-          "y": 1117,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Enemy03Spawn",
-          "persistentUuid": "d075ac5f-d8a1-4445-8b9e-a3041486982b",
-          "width": 0,
-          "x": 324,
-          "y": 1128,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
           "name": "Player",
           "persistentUuid": "6d8a9d22-ada3-4a0c-b9b3-5a373d830791",
           "width": 0,
@@ -1146,7 +1225,7 @@
               "Health": 8,
               "CurrentHealth": 0,
               "MaxHealth": 0,
-              "DamageCooldown": 0,
+              "DamageCooldown": 0.5,
               "IsHealthJustDamaged": false,
               "HealthRegenRate": 0,
               "HealthRegenDelay": 0,
@@ -1197,7 +1276,7 @@
                 {
                   "looping": false,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -1251,7 +1330,7 @@
               "directions": [
                 {
                   "looping": true,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -1432,7 +1511,7 @@
                 {
                   "looping": false,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.5,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -3007,7 +3086,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy03",
           "type": "Sprite",
@@ -3028,6 +3107,36 @@
           ],
           "effects": [],
           "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 0.1,
+              "HasJustFired": false,
+              "FiringArc": 45,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "RotateBullet": false,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": true,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0,
+              "BulletSpeedVariance": 0
+            },
             {
               "name": "Health",
               "type": "Health::Health",
@@ -3059,21 +3168,27 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Appearence",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemy3.png",
-                      "points": [],
+                      "image": "assets\\enemy03Appearence00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 325,
-                        "y": 468
+                        "x": 37.5,
+                        "y": 91
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3084,23 +3199,1126 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 1,
-                            "y": 1
+                            "x": 32,
+                            "y": 66
                           },
                           {
-                            "x": 643,
-                            "y": 1
+                            "x": 43,
+                            "y": 66
                           },
                           {
-                            "x": 643,
-                            "y": 498
+                            "x": 43,
+                            "y": 91
                           },
                           {
-                            "x": 1,
-                            "y": 498
+                            "x": 32,
+                            "y": 91
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Appearence01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 32,
+                            "y": 66
+                          },
+                          {
+                            "x": 43,
+                            "y": 66
+                          },
+                          {
+                            "x": 43,
+                            "y": 91
+                          },
+                          {
+                            "x": 32,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Appearence02.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 32,
+                            "y": 66
+                          },
+                          {
+                            "x": 43,
+                            "y": 66
+                          },
+                          {
+                            "x": 43,
+                            "y": 91
+                          },
+                          {
+                            "x": 32,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 32,
+                            "y": 66
+                          },
+                          {
+                            "x": 43,
+                            "y": 66
+                          },
+                          {
+                            "x": 43,
+                            "y": 91
+                          },
+                          {
+                            "x": 32,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.16,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 52
+                          },
+                          {
+                            "x": 61,
+                            "y": 91
+                          },
+                          {
+                            "x": 14,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PrepareAttack",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.24,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03PrepareAttack00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 91
+                          },
+                          {
+                            "x": 13,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03PrepareAttack01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 91
+                          },
+                          {
+                            "x": 13,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03PrepareAttack02.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 91
+                          },
+                          {
+                            "x": 13,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "AttackCountdown",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.24,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03PrepareAttack01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 91
+                          },
+                          {
+                            "x": 13,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03PrepareAttack02.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 52
+                          },
+                          {
+                            "x": 62,
+                            "y": 91
+                          },
+                          {
+                            "x": 13,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attacking",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Attacking00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 53
+                          },
+                          {
+                            "x": 64,
+                            "y": 53
+                          },
+                          {
+                            "x": 64,
+                            "y": 91
+                          },
+                          {
+                            "x": 11,
+                            "y": 91
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Disappearence",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.12,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Idle01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Appearence02.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Appearence01.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03Appearence00.png",
+                      "points": [
+                        {
+                          "name": "Laser",
+                          "x": 37.5,
+                          "y": 3
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 37.5,
+                        "y": 91
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
@@ -3243,6 +4461,8 @@
               "extraBorder": 0
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 0,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -3255,9 +4475,7 @@
               "ladderClimbingSpeed": 0,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 0,
               "yGrabOffset": 0
@@ -3936,6 +5154,72 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Enemy03Laser",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "extraBorder": 0,
+              "name": "DestroyOutside",
+              "type": "DestroyOutsideBehavior::DestroyOutside"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy03LaserTest.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 152,
+                        "y": 68
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 8,
+                            "y": 10
+                          },
+                          {
+                            "x": 296,
+                            "y": 10
+                          },
+                          {
+                            "x": 296,
+                            "y": 66
+                          },
+                          {
+                            "x": 8,
+                            "y": 66
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -4006,6 +5290,9 @@
           },
           {
             "objectName": "PlayerLife"
+          },
+          {
+            "objectName": "Enemy03Laser"
           }
         ]
       },
@@ -4039,7 +5326,7 @@
                   },
                   "parameters": [
                     "",
-                    ".5",
+                    ".75",
                     "",
                     ""
                   ]
@@ -4099,6 +5386,16 @@
                 "=",
                 "ToString(Player.Health::Health())"
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Enemy03SpawnX",
+                "=",
+                "LeftPlatform.CenterX()"
+              ]
             }
           ]
         },
@@ -4116,7 +5413,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Player movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4131,6 +5427,18 @@
                       "parameters": [
                         "Player",
                         "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Hit\""
                       ]
                     }
                   ],
@@ -4159,6 +5467,18 @@
                       "parameters": [
                         "Player",
                         "PlatformerObject"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation",
+                        "=",
+                        "\"Hit\""
                       ]
                     }
                   ],
@@ -4325,8 +5645,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
-              "name": "Weapon movement",
+              "name": "Weapon behaviour",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
@@ -4418,6 +5737,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Player damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4442,8 +5762,8 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "enemies",
                         "Player",
+                        "enemies",
                         "",
                         "",
                         ""
@@ -4460,6 +5780,17 @@
                         "=",
                         "\"Hit\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
@@ -4475,17 +5806,6 @@
                         "",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Animation",
-                        "=",
-                        "\"Hit\""
-                      ]
                     }
                   ],
                   "events": [
@@ -4494,22 +5814,12 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                            "value": "Health::Health::IsJustDamaged"
                           },
                           "parameters": [
                             "Player",
-                            "Animation",
-                            "=",
-                            "\"Hit\""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Animation"
+                            "Health",
+                            ""
                           ]
                         }
                       ],
@@ -4522,18 +5832,28 @@
                             "Player",
                             "Animation",
                             "=",
-                            "\"Idle\""
+                            "\"Hit\""
                           ]
                         },
                         {
                           "type": {
-                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                            "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "PlayerLife",
+                            "Text",
+                            "=",
+                            "ToString(Player.Health::Health())"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
                           },
                           "parameters": [
                             "Player",
-                            "Animation",
-                            "=",
-                            "0"
+                            "PlatformerObject",
+                            ""
                           ]
                         }
                       ]
@@ -4545,25 +5865,45 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "Health::Health::IsJustDamaged"
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
                       },
                       "parameters": [
                         "Player",
-                        "Health",
-                        ""
+                        "Animation",
+                        "=",
+                        "\"Hit\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Animation"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
-                        "PlayerLife",
-                        "Text",
+                        "Player",
+                        "Animation",
                         "=",
-                        "ToString(Player.Health::Health())"
+                        "\"Idle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "yes"
                       ]
                     }
                   ]
@@ -4925,6 +6265,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy01 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5094,6 +6435,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy01 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5282,6 +6624,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5321,7 +6664,7 @@
                         "",
                         "\"Enemy02Spawn\"",
                         ">",
-                        "4"
+                        "6"
                       ]
                     },
                     {
@@ -5604,6 +6947,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -5930,6 +7274,46 @@
                         "ToString(Player.Health::Health())"
                       ]
                     }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::IsJustDamaged"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation",
+                            "=",
+                            "\"Hit\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -5976,7 +7360,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "disabled": true,
               "name": "Enemy03 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6021,15 +7404,6 @@
                     },
                     {
                       "type": {
-                        "value": "AjoutHasard"
-                      },
-                      "parameters": [
-                        "",
-                        "Enemy03Spawn"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "SceneInstancesCount"
                       },
                       "parameters": [
@@ -6040,37 +7414,93 @@
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "Enemy03",
-                        "Enemy03Spawn.CenterX()",
-                        "Enemy03Spawn.CenterY()",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Enemy03SpawnRight",
+                            "False"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy03",
+                            "LeftPlatform.CenterX()",
+                            "SceneWindowHeight()-10",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ResetTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Enemy03Spawn\""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "Enemy03SpawnRight",
+                            "True"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "Enemy03",
+                            "RightPlatform.CenterX()",
+                            "SceneWindowHeight()-10",
+                            ""
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "Enemy03",
-                        "270",
-                        "200",
-                        "1"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "RemoveTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Enemy03Spawn\""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ToggleSceneVariableAsBoolean"
+                              },
+                              "parameters": [
+                                "Enemy03SpawnRight"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -6080,54 +7510,44 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "CenterY"
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
                       },
                       "parameters": [
                         "Enemy03",
-                        "<",
-                        "ScreenHeight() - 100"
+                        "Animation",
+                        "=",
+                        "\"Appearence\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Arreter"
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
-                        "Enemy03"
+                        "Enemy03",
+                        "Animation",
+                        "=",
+                        "\"Idle\""
                       ]
-                    }
-                  ],
-                  "events": [
+                    },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "Arret"
-                          },
-                          "parameters": [
-                            "Enemy03"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ResetTimer"
-                          },
-                          "parameters": [
-                            "",
-                            "\"Enemy03Attack\""
-                          ]
-                        }
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
                       ]
                     }
                   ]
@@ -6140,7 +7560,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "disabled": true,
               "name": "Enemy03 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -6156,32 +7575,83 @@
                         "",
                         "\"Enemy03Attack\"",
                         ">",
-                        "3"
+                        "4"
                       ]
                     },
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "Health::Health::IsDead"
+                        "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [
-                        "Enemy03",
-                        "Health",
-                        ""
-                      ]
+                      "parameters": []
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "Create"
+                        "value": "PauseTimer"
                       },
                       "parameters": [
                         "",
-                        "Enemy03Attack",
-                        "Enemy03.BoundingBoxLeft()",
-                        "0",
-                        ""
+                        "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation",
+                        "=",
+                        "\"PrepareAttack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        ".72"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation",
+                        "=",
+                        "\"AttackCountdown\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation",
+                        "=",
+                        "\"Attacking\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "canShootLazer",
+                        "True"
                       ]
                     }
                   ]
@@ -6191,41 +7661,66 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                        "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "Enemy03Attack",
-                        "Animation"
+                        "Enemy03",
+                        "canShootLazer",
+                        "True"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "ResetTimer"
+                        "value": "FireBullet::FireBullet::Fire"
                       },
                       "parameters": [
-                        "",
-                        "\"Enemy03Attack\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeSprite"
-                      },
-                      "parameters": [
-                        "Enemy03Attack",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "Enemy03Attack",
+                        "Enemy03",
+                        "FireBullet",
+                        "Enemy03.PointX(\"Laser\")",
+                        "Enemy03.PointY(\"Laser\")",
+                        "Enemy03Laser",
+                        "270",
+                        "200",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "canShootLazer",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        ".5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation",
+                        "=",
+                        "\"Disappearence\""
                       ]
                     }
                   ]
@@ -6238,11 +7733,11 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "Enemy03Attack",
+                        "Enemy03Laser",
                         "Player",
                         "",
                         "",
-                        ""
+                        "yes"
                       ]
                     }
                   ],
@@ -6254,9 +7749,103 @@
                       "parameters": [
                         "Player",
                         "Health",
-                        "5",
+                        "8",
                         "",
                         "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::IsJustDamaged"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation",
+                            "=",
+                            "\"Hit\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ActivateBehavior"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation",
+                        "=",
+                        "\"Disappearence\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "Animation"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Spawn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RemoveTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemy03",
                         ""
                       ]
                     }
@@ -6303,6 +7892,15 @@
                         "",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -6314,7 +7912,7 @@
                         "value": "Health::Health::IsDead"
                       },
                       "parameters": [
-                        "enemies",
+                        "Enemy01",
                         "Health",
                         ""
                       ]
@@ -6326,7 +7924,33 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "enemies",
+                        "Enemy01",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::IsDead"
+                      },
+                      "parameters": [
+                        "Enemy02",
+                        "Health",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Enemy02",
                         ""
                       ]
                     }
@@ -6352,7 +7976,7 @@
                         "value": "Delete"
                       },
                       "parameters": [
-                        "Enemy03Attack",
+                        "Enemy03",
                         ""
                       ]
                     },
@@ -6363,6 +7987,15 @@
                       "parameters": [
                         "",
                         "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Spawn\""
                       ]
                     }
                   ]
