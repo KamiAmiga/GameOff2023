@@ -159,15 +159,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/enemy2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\enemy2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/enemy3.png",
         "kind": "image",
         "metadata": "",
@@ -183,15 +174,6 @@
         "name": "assets\\NewSprite6.png",
         "smoothed": true,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/enemy2projectile.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\enemy2projectile.png",
-        "smoothed": true,
-        "userAdded": false
       },
       {
         "alwaysLoaded": false,
@@ -334,6 +316,159 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\enemy01Attacking01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02Idle00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02Idle00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02Idle01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02Idle01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02Attacking00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02Attacking00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02Attacking01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02Attacking01.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02Attacking02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02Attacking02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombCountdown00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombCountdown00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombCountdown01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombCountdown01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombCountdown02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombCountdown02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombCountdown03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombCountdown03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombCountdown04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombCountdown04.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombCountdown05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombCountdown05.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombExplode00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombExplode00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombExplode01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombExplode01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombExplode02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombExplode02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombExplode03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombExplode03.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombExplode04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombExplode04.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy02BombExplode05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy02BombExplode05.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -574,7 +709,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2550455473354341,
+        "zoomFactor": 0.24672586957406276,
         "windowMask": true
       },
       "objectsGroups": [
@@ -1036,10 +1171,10 @@
             {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "canGrabWithoutMoving": false,
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
               "deceleration": 1500,
               "gravity": 2000,
               "ignoreDefaultControls": false,
@@ -1097,11 +1232,11 @@
                           },
                           {
                             "x": 123,
-                            "y": 143
+                            "y": 139
                           },
                           {
                             "x": 7,
-                            "y": 143
+                            "y": 139
                           }
                         ]
                       ]
@@ -2506,7 +2641,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy02",
           "type": "Sprite",
@@ -2540,34 +2675,20 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "FireBullet",
-              "type": "FireBullet::FireBullet",
-              "FireCooldown": 5,
-              "HasJustFired": false,
-              "FiringArc": 45,
-              "BulletQuantity": 1,
-              "AngleVariance": 5,
-              "RotateBullet": false,
-              "AmmoQuantity": 0,
-              "ShotsPerReload": 0,
-              "ReloadDuration": 1,
-              "MaxAmmo": 0,
-              "ShotsBeforeNextReload": 0,
-              "TotalShotsFired": 0,
-              "TotalBulletsCreated": 0,
-              "StartingAmmo": 0,
-              "TotalReloadsCompleted": 0,
-              "UnlimitedAmmo": true,
-              "ReloadInProgress": false,
-              "HeatIncreasePerShot": 0,
-              "HeatLevel": 0,
-              "AutomaticReloading": true,
-              "OverheatDuration": 0,
-              "LinearCoolingRate": 0.1,
-              "ExponentialCoolingRate": 0.3,
-              "BulletLayer": "",
-              "RandomizedAngle": 0,
-              "BulletSpeedVariance": 10
+              "name": "EllipseMovement",
+              "type": "EllipseMovement::EllipseMovement",
+              "RadiusX": 0,
+              "RadiusY": 15,
+              "LoopDuration": 4,
+              "InitialTurningLeft": false,
+              "InitialDirectionAngle": 0,
+              "ShouldRotate": false,
+              "RotationOffset": 0,
+              "CenterX": 0,
+              "CenterY": 0,
+              "MovementAngle": 0,
+              "OldX": 0,
+              "OldY": 0
             },
             {
               "name": "Health",
@@ -2608,21 +2729,27 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Idle",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemy2.png",
-                      "points": [],
+                      "image": "assets\\enemy02Idle00.png",
+                      "points": [
+                        {
+                          "name": "Bomb",
+                          "x": 149,
+                          "y": 92
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 58,
-                        "y": 32
+                        "x": 87.5,
+                        "y": 67.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2633,20 +2760,242 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 1,
-                            "y": 1
+                            "x": 42,
+                            "y": 32
                           },
                           {
-                            "x": 115,
-                            "y": 1
+                            "x": 167,
+                            "y": 32
                           },
                           {
-                            "x": 115,
-                            "y": 63
+                            "x": 167,
+                            "y": 104
                           },
                           {
-                            "x": 1,
-                            "y": 63
+                            "x": 42,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02Idle01.png",
+                      "points": [
+                        {
+                          "name": "Bomb",
+                          "x": 149,
+                          "y": 92
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 87.5,
+                        "y": 67.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 42,
+                            "y": 32
+                          },
+                          {
+                            "x": 167,
+                            "y": 32
+                          },
+                          {
+                            "x": 167,
+                            "y": 104
+                          },
+                          {
+                            "x": 42,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Attacking",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.12,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02Idle00.png",
+                      "points": [
+                        {
+                          "name": "Bomb",
+                          "x": 149,
+                          "y": 92
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 87.5,
+                        "y": 67.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 42,
+                            "y": 32
+                          },
+                          {
+                            "x": 167,
+                            "y": 32
+                          },
+                          {
+                            "x": 167,
+                            "y": 104
+                          },
+                          {
+                            "x": 42,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02Attacking00.png",
+                      "points": [
+                        {
+                          "name": "Bomb",
+                          "x": 149,
+                          "y": 92
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 87.5,
+                        "y": 67.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 42,
+                            "y": 32
+                          },
+                          {
+                            "x": 167,
+                            "y": 32
+                          },
+                          {
+                            "x": 167,
+                            "y": 104
+                          },
+                          {
+                            "x": 42,
+                            "y": 104
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02Attacking01.png",
+                      "points": [
+                        {
+                          "name": "Bomb",
+                          "x": 149,
+                          "y": 92
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 87.5,
+                        "y": 67.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 42,
+                            "y": 30
+                          },
+                          {
+                            "x": 170,
+                            "y": 30
+                          },
+                          {
+                            "x": 170,
+                            "y": 106
+                          },
+                          {
+                            "x": 42,
+                            "y": 106
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02Attacking02.png",
+                      "points": [
+                        {
+                          "name": "Bomb",
+                          "x": 149,
+                          "y": 92
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 87.5,
+                        "y": 67.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 46,
+                            "y": 34
+                          },
+                          {
+                            "x": 170,
+                            "y": 34
+                          },
+                          {
+                            "x": 170,
+                            "y": 108
+                          },
+                          {
+                            "x": 46,
+                            "y": 108
                           }
                         ]
                       ]
@@ -2894,6 +3243,26 @@
               "extraBorder": 0
             },
             {
+              "acceleration": 0,
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 0,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 0,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 0,
+              "yGrabOffset": 0
+            },
+            {
               "name": "RepeatTimer",
               "type": "RepeatEveryXSeconds::RepeatTimer",
               "TimerName": "Explode",
@@ -2904,21 +3273,21 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Countdown",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.12,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemy2projectile.png",
+                      "image": "assets\\enemy02BombCountdown00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 41,
+                        "y": 66.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2929,20 +3298,500 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 1,
-                            "y": 0
+                            "x": 21,
+                            "y": 11
                           },
                           {
-                            "x": 39,
-                            "y": 0
+                            "x": 60,
+                            "y": 11
                           },
                           {
-                            "x": 39,
-                            "y": 54
+                            "x": 60,
+                            "y": 67
                           },
                           {
-                            "x": 1,
-                            "y": 54
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown03.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown04.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown05.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown04.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombCountdown02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Explode",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.12,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombExplode00.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombExplode01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombExplode02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombExplode03.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombExplode04.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\enemy02BombExplode05.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 41,
+                        "y": 66.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 11
+                          },
+                          {
+                            "x": 60,
+                            "y": 67
+                          },
+                          {
+                            "x": 21,
+                            "y": 67
                           }
                         ]
                       ]
@@ -3267,6 +4116,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Player movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3351,55 +4201,6 @@
                         "Player",
                         "PlatformEnd",
                         ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Animation",
-                        "=",
-                        "\"Hit\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Animation"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Animation",
-                        "=",
-                        "\"Idle\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Animation",
-                        "=",
-                        "0"
                       ]
                     }
                   ]
@@ -3524,6 +4325,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Weapon movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -3683,6 +4485,57 @@
                         "Animation",
                         "=",
                         "\"Hit\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation",
+                            "=",
+                            "\"Hit\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation",
+                            "=",
+                            "\"Idle\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Animation",
+                            "=",
+                            "0"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -4429,7 +5282,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "disabled": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4540,7 +5392,7 @@
                             "Enemy02",
                             "XDestination",
                             "=",
-                            "floor(RandomInRange(50, ScreenWidth()/2 - ScreenWidth()/6))"
+                            "RandomInRange(LeftPlatform.BoundingBoxLeft() - Enemy02.Width() * .25, LeftPlatform.BoundingBoxRight() - Enemy02.Width() * .5)"
                           ]
                         },
                         {
@@ -4572,7 +5424,7 @@
                           "parameters": [
                             "Enemy02",
                             "Flippable",
-                            "yes"
+                            "no"
                           ]
                         }
                       ]
@@ -4600,7 +5452,7 @@
                             "Enemy02",
                             "XDestination",
                             "=",
-                            "floor(RandomInRange(ScreenWidth()/2 + ScreenWidth()/6, ScreenWidth() - 50))"
+                            "RandomInRange(RightPlatform.BoundingBoxLeft() + Enemy02.Width() * .5, RightPlatform.BoundingBoxRight() + Enemy02.Width() * .25)"
                           ]
                         },
                         {
@@ -4632,7 +5484,7 @@
                           "parameters": [
                             "Enemy02",
                             "Flippable",
-                            "no"
+                            "yes"
                           ]
                         }
                       ]
@@ -4651,7 +5503,7 @@
                         "Enemy02",
                         "Enemy02.XDestination",
                         "Enemy02.YDestination",
-                        "50",
+                        "60",
                         "0"
                       ]
                     }
@@ -4672,12 +5524,12 @@
                     },
                     {
                       "type": {
-                        "value": "PosX"
+                        "value": "PosY"
                       },
                       "parameters": [
                         "Enemy02",
                         "<=",
-                        "Enemy02.XDestination + 1"
+                        "Enemy02.YDestination + 1"
                       ]
                     },
                     {
@@ -4692,12 +5544,12 @@
                     },
                     {
                       "type": {
-                        "value": "PosY"
+                        "value": "PosX"
                       },
                       "parameters": [
                         "Enemy02",
                         "<=",
-                        "Enemy02.YDestination + 1"
+                        "Enemy02.XDestination + 1"
                       ]
                     }
                   ],
@@ -4719,6 +5571,28 @@
                       "parameters": [
                         "Enemy02"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemy02",
+                        "XDestination",
+                        "=",
+                        "Enemy02.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemy02",
+                        "YDestination",
+                        "=",
+                        "Enemy02.Y()"
+                      ]
                     }
                   ]
                 }
@@ -4730,7 +5604,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "disabled": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -4779,14 +5652,42 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy02",
+                            "Animation",
+                            "=",
+                            "\"Attacking\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            ".5"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "Create"
                           },
                           "parameters": [
                             "",
                             "Enemy02Bullet",
-                            "Enemy02.CenterX()",
-                            "Enemy02.CenterY()",
+                            "Enemy02.PointX(\"Bomb\")",
+                            "Enemy02.PointY(\"Bomb\")",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                          },
+                          "parameters": [
+                            "Enemy02Bullet",
+                            "Animation"
                           ]
                         },
                         {
@@ -4797,6 +5698,25 @@
                             "Enemy02Bullet",
                             "RepeatTimer",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Wait"
+                          },
+                          "parameters": [
+                            ".12"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Enemy02",
+                            "Animation",
+                            "=",
+                            "\"Idle\""
                           ]
                         }
                       ]
@@ -4817,20 +5737,7 @@
                       ]
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AddForceVersPos"
-                      },
-                      "parameters": [
-                        "Enemy02Bullet",
-                        "LeftPlatform.PointX(\"BombTarget\")",
-                        "LeftPlatform.BoundingBoxTop()",
-                        "100",
-                        ""
-                      ]
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -4851,18 +5758,6 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "MettreXY"
-                          },
-                          "parameters": [
-                            "Enemy02Bullet",
-                            "=",
-                            "LeftPlatform.PointX(\"BombTarget\")",
-                            "=",
-                            "LeftPlatform.BoundingBoxTop()-Enemy02Bullet.Height()*.8"
-                          ]
-                        },
-                        {
-                          "type": {
                             "value": "RepeatEveryXSeconds::RepeatTimer::Resume"
                           },
                           "parameters": [
@@ -4870,13 +5765,21 @@
                             "RepeatTimer",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                          },
+                          "parameters": [
+                            "Enemy02Bullet",
+                            "Animation"
+                          ]
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -4890,30 +5793,7 @@
                       ]
                     }
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "AddForceVersPos"
-                      },
-                      "parameters": [
-                        "Enemy02Bullet",
-                        "RightPlatform.PointX(\"BombTarget\")",
-                        "RightPlatform.BoundingBoxTop()",
-                        "100",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "RepeatEveryXSeconds::RepeatTimer::Resume"
-                      },
-                      "parameters": [
-                        "Enemy02Bullet",
-                        "RepeatTimer",
-                        ""
-                      ]
-                    }
-                  ],
+                  "actions": [],
                   "events": [
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -4934,14 +5814,21 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "MettreXY"
+                            "value": "RepeatEveryXSeconds::RepeatTimer::Resume"
                           },
                           "parameters": [
                             "Enemy02Bullet",
-                            "=",
-                            "RightPlatform.PointX(\"BombTarget\")",
-                            "=",
-                            "RightPlatform.BoundingBoxTop()-Enemy02Bullet.Height()*.8"
+                            "RepeatTimer",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                          },
+                          "parameters": [
+                            "Enemy02Bullet",
+                            "Animation"
                           ]
                         }
                       ]
@@ -4960,17 +5847,62 @@
                         "RepeatTimer",
                         ""
                       ]
-                    },
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Enemy02Bullet",
+                        "Animation",
+                        "=",
+                        "\"Explode\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
                         "value": "Distance"
                       },
                       "parameters": [
-                        "Enemy02Bullet",
                         "Player",
-                        "200",
+                        "Enemy02Bullet",
+                        "100",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Enemy02Bullet",
+                        "Animation",
+                        "=",
+                        "\"Explode\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Sprite"
+                      },
+                      "parameters": [
+                        "Enemy02Bullet",
+                        "<=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -4987,6 +5919,44 @@
                         ""
                       ]
                     },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "PlayerLife",
+                        "Text",
+                        "=",
+                        "ToString(Player.Health::Health())"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Enemy02Bullet",
+                        "Animation",
+                        "=",
+                        "\"Explode\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Enemy02Bullet",
+                        "Animation"
+                      ]
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "Delete"
