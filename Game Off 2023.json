@@ -159,15 +159,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/enemy3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\enemy3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite6.png",
         "kind": "image",
         "metadata": "",
@@ -561,6 +552,33 @@
         "name": "assets\\enemy03LaserTest.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/cursorPointer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\cursorPointer.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mainSceneBG.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mainSceneBG.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mainScene.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mainScene.jpg",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -799,7 +817,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.24672586957406276,
+        "zoomFactor": 0.4335774304702377,
         "windowMask": true
       },
       "objectsGroups": [
@@ -1204,6 +1222,36 @@
           "x": 74,
           "y": 599,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "CursorPointer",
+          "persistentUuid": "06092f58-e6fe-423f-a026-de4ef3afc565",
+          "width": 0,
+          "x": 1188,
+          "y": 193,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "Background",
+          "persistentUuid": "674a85a3-3932-42e8-affd-bdcb88dc6167",
+          "width": 0,
+          "x": -58,
+          "y": -44,
+          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5165,9 +5213,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "DestroyOutside",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             }
           ],
           "animations": [
@@ -5211,6 +5259,126 @@
                           {
                             "x": 8,
                             "y": 66
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "CursorPointer",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\cursorPointer.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 56,
+                            "y": 1
+                          },
+                          {
+                            "x": 56,
+                            "y": 60
+                          },
+                          {
+                            "x": 1,
+                            "y": 60
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\mainScene.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1380,
+                            "y": 0
+                          },
+                          {
+                            "x": 1380,
+                            "y": 820
+                          },
+                          {
+                            "x": 0,
+                            "y": 820
                           }
                         ]
                       ]
@@ -5293,6 +5461,12 @@
           },
           {
             "objectName": "Enemy03Laser"
+          },
+          {
+            "objectName": "CursorPointer"
+          },
+          {
+            "objectName": "Background"
           }
         ]
       },
@@ -5395,6 +5569,66 @@
                 "Enemy03SpawnX",
                 "=",
                 "LeftPlatform.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "CacheSouris"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "Background",
+                "=",
+                "ScreenWidth()/2",
+                "=",
+                "ScreenHeight()/2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "CursorPointer",
+                "=",
+                "CursorX()",
+                "=",
+                "CursorY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "RotateTowardPosition"
+              },
+              "parameters": [
+                "CursorPointer",
+                "Weapon.X()",
+                "Weapon.Y()",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "CursorPointer",
+                "Flippable",
+                "yes"
               ]
             }
           ]
@@ -7485,22 +7719,6 @@
                             "\"Enemy03Spawn\""
                           ]
                         }
-                      ],
-                      "events": [
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ToggleSceneVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "Enemy03SpawnRight"
-                              ]
-                            }
-                          ]
-                        }
                       ]
                     }
                   ]
@@ -7532,6 +7750,15 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Enemy03Attack\""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetName"
                       },
                       "parameters": [
@@ -7543,11 +7770,10 @@
                     },
                     {
                       "type": {
-                        "value": "ResetTimer"
+                        "value": "ToggleSceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "",
-                        "\"Enemy03Attack\""
+                        "Enemy03SpawnRight"
                       ]
                     }
                   ]
@@ -8173,6 +8399,38 @@
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Background",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
