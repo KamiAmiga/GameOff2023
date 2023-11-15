@@ -141,15 +141,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/platformTest.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\platformTest.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -564,19 +555,37 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/mainSceneBG.jpg",
+        "file": "assets/mainScene.jpg",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\mainSceneBG.jpg",
+        "name": "assets\\mainScene.jpg",
         "smoothed": true,
         "userAdded": true
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/mainScene.jpg",
+        "file": "assets/narwhal.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\mainScene.jpg",
+        "name": "assets\\narwhal.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/balance.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\balance.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/scalePlate.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\scalePlate.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -817,7 +826,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4335774304702377,
+        "zoomFactor": 0.5468750000000013,
         "windowMask": true
       },
       "objectsGroups": [
@@ -861,44 +870,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 62,
-          "layer": "",
-          "name": "LeftPlatform",
-          "persistentUuid": "1d6c93c1-d825-4c4a-9446-fdc4e4ab361c",
-          "width": 272,
-          "x": 245,
-          "y": 396,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 62,
-          "layer": "",
-          "name": "RightPlatform",
-          "persistentUuid": "886e7487-2da4-4786-a26e-0d25998138a3",
-          "width": 272,
-          "x": 772,
-          "y": 393,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 729,
           "layer": "",
           "name": "PlatformEnd",
           "persistentUuid": "c5a3f198-7d0c-4409-a8e6-1c9dff6e863e",
           "width": 42,
-          "x": 1041,
+          "x": 1203,
           "y": -8,
           "zOrder": 6,
           "numberProperties": [],
@@ -914,7 +891,7 @@
           "name": "PlatformEnd",
           "persistentUuid": "48e21f07-3c9b-483f-b838-6ff8a6dc3c26",
           "width": 42,
-          "x": 730,
+          "x": 800,
           "y": -7,
           "zOrder": 6,
           "numberProperties": [],
@@ -929,8 +906,8 @@
           "name": "RightPlatformSwitcher",
           "persistentUuid": "423a71b7-99a7-4683-883f-301ba3224897",
           "width": 0,
-          "x": 748,
-          "y": 309,
+          "x": 846,
+          "y": 416,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -945,8 +922,8 @@
           "name": "PlatformEnd",
           "persistentUuid": "f2ab2a75-de19-4d81-a85d-4f216a18f604",
           "width": 42,
-          "x": 515,
-          "y": -5,
+          "x": 502,
+          "y": -3,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -961,8 +938,8 @@
           "name": "PlatformEnd",
           "persistentUuid": "e64312fd-57c3-44c4-aa06-cfef117d79ba",
           "width": 42,
-          "x": 204,
-          "y": 0,
+          "x": 98,
+          "y": -6,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -976,8 +953,8 @@
           "name": "LeftPlatformSwitcher",
           "persistentUuid": "c27f5481-9d4b-4a1a-af63-77e803afec32",
           "width": 0,
-          "x": 470,
-          "y": 320,
+          "x": 436,
+          "y": 418,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -1252,6 +1229,66 @@
           "x": -58,
           "y": -44,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Narwhal",
+          "persistentUuid": "76b13d74-1bed-4aa5-82ba-07c8542cc64a",
+          "width": 0,
+          "x": 404,
+          "y": 21,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Balance",
+          "persistentUuid": "c3b70a92-1431-45c1-a4e6-9ad7e8dcfee1",
+          "width": 0,
+          "x": 242,
+          "y": 55,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "RightPlatform",
+          "persistentUuid": "d11a5a53-f744-4b4b-9d38-7da8fadb115b",
+          "width": 0,
+          "x": 839,
+          "y": 206,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "LeftPlatform",
+          "persistentUuid": "db445453-fb10-44e2-99c9-08698ede5c9e",
+          "width": 0,
+          "x": 137,
+          "y": 206,
+          "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1610,7 +1647,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "LeftPlatform",
           "type": "Sprite",
@@ -1637,17 +1674,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\platformTest.png",
+                      "image": "assets\\scalePlate.png",
                       "points": [
                         {
                           "name": "Switcher",
-                          "x": 285,
-                          "y": 0
-                        },
-                        {
-                          "name": "BombTarget",
-                          "x": 153,
-                          "y": 0
+                          "x": 334.5,
+                          "y": 252.5
                         }
                       ],
                       "originPoint": {
@@ -1656,28 +1688,28 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 184,
+                        "y": 1
                       },
                       "customCollisionMask": [
                         [
                           {
                             "x": 2,
-                            "y": 4
+                            "y": 276
                           },
                           {
-                            "x": 303,
-                            "y": 4
+                            "x": 366,
+                            "y": 276
                           },
                           {
-                            "x": 303,
-                            "y": 67
+                            "x": 366,
+                            "y": 324
                           },
                           {
                             "x": 2,
-                            "y": 67
+                            "y": 324
                           }
                         ]
                       ]
@@ -1689,7 +1721,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "RightPlatform",
           "type": "Sprite",
@@ -1716,12 +1748,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\platformTest.png",
+                      "image": "assets\\scalePlate.png",
                       "points": [
                         {
                           "name": "Switcher",
-                          "x": 15,
-                          "y": 0
+                          "x": 26.5,
+                          "y": 255
                         }
                       ],
                       "originPoint": {
@@ -1730,28 +1762,28 @@
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 184,
+                        "y": 1
                       },
                       "customCollisionMask": [
                         [
                           {
                             "x": 2,
-                            "y": 4
+                            "y": 276
                           },
                           {
-                            "x": 303,
-                            "y": 4
+                            "x": 366,
+                            "y": 276
                           },
                           {
-                            "x": 303,
-                            "y": 67
+                            "x": 366,
+                            "y": 324
                           },
                           {
                             "x": 2,
-                            "y": 67
+                            "y": 324
                           }
                         ]
                       ]
@@ -5388,6 +5420,148 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Narwhal",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\narwhal.png",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 249.5,
+                          "y": 48
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 249.5,
+                        "y": 308
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 391,
+                            "y": 1
+                          },
+                          {
+                            "x": 391,
+                            "y": 660
+                          },
+                          {
+                            "x": 1,
+                            "y": 660
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Balance",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\balance.png",
+                      "points": [
+                        {
+                          "name": "Pivot",
+                          "x": 414,
+                          "y": 16
+                        },
+                        {
+                          "name": "LeftPlatform",
+                          "x": 47,
+                          "y": 154
+                        },
+                        {
+                          "name": "RightPlatform",
+                          "x": 781,
+                          "y": 154
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 414,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 827,
+                            "y": 1
+                          },
+                          {
+                            "x": 827,
+                            "y": 175
+                          },
+                          {
+                            "x": 1,
+                            "y": 175
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -5467,6 +5641,12 @@
           },
           {
             "objectName": "Background"
+          },
+          {
+            "objectName": "Narwhal"
+          },
+          {
+            "objectName": "Balance"
           }
         ]
       },
@@ -5541,6 +5721,30 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "LeftPlatformSwitcher"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "RightPlatformSwitcher"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "PlayerLife"
+              ]
+            },
+            {
+              "type": {
                 "value": "OpacityCapability::OpacityBehavior::SetValue"
               },
               "parameters": [
@@ -5590,6 +5794,50 @@
                 "=",
                 "ScreenHeight()/2"
               ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Narwhal",
+                "=",
+                "ScreenWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Balance",
+                "=",
+                "ScreenWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutourPos"
+              },
+              "parameters": [
+                "LeftPlatform",
+                "Balance.PointX(\"LeftPlatform\")",
+                "Balance.PointY(\"LeftPlatform\")",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreAutourPos"
+              },
+              "parameters": [
+                "RightPlatform",
+                "Balance.PointX(\"RightPlatform\")",
+                "Balance.PointY(\"RightPlatform\")",
+                "0",
+                "0"
+              ]
             }
           ]
         },
@@ -5615,8 +5863,8 @@
               },
               "parameters": [
                 "CursorPointer",
-                "Weapon.X()",
-                "Weapon.Y()",
+                "Weapon.CenterX()",
+                "Weapon.CenterY()",
                 "0",
                 ""
               ]
@@ -6200,24 +6448,36 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "AddForceXY"
+                            "value": "Rotate"
                           },
                           "parameters": [
-                            "LeftPlatform",
-                            "0",
-                            "5",
+                            "Balance",
+                            "-1",
                             ""
                           ]
                         },
                         {
                           "type": {
-                            "value": "AddForceXY"
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "LeftPlatform",
+                            "=",
+                            "Balance.PointX(\"LeftPlatform\")",
+                            "=",
+                            "Balance.PointY(\"LeftPlatform\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetCenter"
                           },
                           "parameters": [
                             "RightPlatform",
-                            "0",
-                            "-5",
-                            ""
+                            "=",
+                            "Balance.PointX(\"RightPlatform\")",
+                            "=",
+                            "Balance.PointY(\"RightPlatform\")"
                           ]
                         }
                       ]
@@ -6240,24 +6500,36 @@
                       "actions": [
                         {
                           "type": {
-                            "value": "AddForceXY"
+                            "value": "Rotate"
                           },
                           "parameters": [
-                            "RightPlatform",
-                            "0",
-                            "5",
+                            "Balance",
+                            "1",
                             ""
                           ]
                         },
                         {
                           "type": {
-                            "value": "AddForceXY"
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "RightPlatform",
+                            "=",
+                            "Balance.PointX(\"RightPlatform\")",
+                            "=",
+                            "Balance.PointY(\"RightPlatform\")"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetCenter"
                           },
                           "parameters": [
                             "LeftPlatform",
-                            "0",
-                            "-5",
-                            ""
+                            "=",
+                            "Balance.PointX(\"LeftPlatform\")",
+                            "=",
+                            "Balance.PointY(\"LeftPlatform\")"
                           ]
                         }
                       ]
@@ -6272,7 +6544,6 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
-              "folded": true,
               "name": "Platforms switchers",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
