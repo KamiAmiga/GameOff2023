@@ -114,15 +114,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -537,15 +528,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/enemy03LaserTest.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\enemy03LaserTest.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/cursorPointer.png",
         "kind": "image",
         "metadata": "",
@@ -586,6 +568,69 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\scalePlate.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemy03Attack.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\enemy03Attack.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/platformSwitcher00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\platformSwitcher00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/platformSwitcher01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\platformSwitcher01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/lifeCounter00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\lifeCounter00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/lifeCounter01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\lifeCounter01.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/lifeCounter02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\lifeCounter02.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/lifeCounter03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\lifeCounter03.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -907,7 +952,7 @@
           "persistentUuid": "423a71b7-99a7-4683-883f-301ba3224897",
           "width": 0,
           "x": 846,
-          "y": 416,
+          "y": 383,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -953,8 +998,8 @@
           "name": "LeftPlatformSwitcher",
           "persistentUuid": "c27f5481-9d4b-4a1a-af63-77e803afec32",
           "width": 0,
-          "x": 436,
-          "y": 418,
+          "x": 396,
+          "y": 383,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -1196,8 +1241,8 @@
           "name": "PlayerLife",
           "persistentUuid": "081a4346-e0d5-440f-9dc0-de85c7ed419c",
           "width": 0,
-          "x": 74,
-          "y": 599,
+          "x": 154,
+          "y": 653,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -1243,7 +1288,7 @@
           "width": 0,
           "x": 404,
           "y": 21,
-          "zOrder": 5,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1258,7 +1303,7 @@
           "width": 0,
           "x": 242,
           "y": 55,
-          "zOrder": 26,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1273,7 +1318,7 @@
           "width": 0,
           "x": 839,
           "y": 206,
-          "zOrder": 27,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1288,7 +1333,22 @@
           "width": 0,
           "x": 137,
           "y": 206,
-          "zOrder": 28,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "LifeCounter",
+          "persistentUuid": "f151f23e-e473-477f-8a19-ccde8ffb305c",
+          "width": 0,
+          "x": 19,
+          "y": 630,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1678,8 +1738,8 @@
                       "points": [
                         {
                           "name": "Switcher",
-                          "x": 334.5,
-                          "y": 252.5
+                          "x": 396,
+                          "y": 245
                         }
                       ],
                       "originPoint": {
@@ -1752,8 +1812,8 @@
                       "points": [
                         {
                           "name": "Switcher",
-                          "x": 26.5,
-                          "y": 255
+                          "x": -30,
+                          "y": 245
                         }
                       ],
                       "originPoint": {
@@ -2226,13 +2286,13 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite2",
+                      "image": "assets\\platformSwitcher00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2248,20 +2308,56 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 1,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 101,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 101,
+                            "y": 94
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 1,
+                            "y": 94
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\platformSwitcher01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 101,
+                            "y": 1
+                          },
+                          {
+                            "x": 101,
+                            "y": 94
+                          },
+                          {
+                            "x": 1,
+                            "y": 94
                           }
                         ]
                       ]
@@ -2308,13 +2404,13 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite2",
+                      "image": "assets\\platformSwitcher00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2330,20 +2426,56 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 1,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 0
+                            "x": 101,
+                            "y": 1
                           },
                           {
-                            "x": 64,
-                            "y": 64
+                            "x": 101,
+                            "y": 94
                           },
                           {
-                            "x": 0,
-                            "y": 64
+                            "x": 1,
+                            "y": 94
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\platformSwitcher01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 101,
+                            "y": 1
+                          },
+                          {
+                            "x": 101,
+                            "y": 94
+                          },
+                          {
+                            "x": 1,
+                            "y": 94
                           }
                         ]
                       ]
@@ -3215,7 +3347,7 @@
               "ExponentialCoolingRate": 0.3,
               "BulletLayer": "",
               "RandomizedAngle": 0,
-              "BulletSpeedVariance": 0
+              "BulletSpeedVariance": 200
             },
             {
               "name": "Health",
@@ -5261,7 +5393,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\enemy03LaserTest.png",
+                      "image": "assets\\enemy03Attack.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5269,28 +5401,28 @@
                         "y": 68
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 200,
+                        "y": 220
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 8,
-                            "y": 10
+                            "x": 24,
+                            "y": 47
                           },
                           {
-                            "x": 296,
-                            "y": 10
+                            "x": 380,
+                            "y": 47
                           },
                           {
-                            "x": 296,
-                            "y": 66
+                            "x": 380,
+                            "y": 204
                           },
                           {
-                            "x": 8,
-                            "y": 66
+                            "x": 24,
+                            "y": 204
                           }
                         ]
                       ]
@@ -5562,6 +5694,210 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "LifeCounter",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "FullLife",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\lifeCounter00.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 66
+                          },
+                          {
+                            "x": 1,
+                            "y": 66
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "MediumLife",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\lifeCounter01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 66
+                          },
+                          {
+                            "x": 1,
+                            "y": 66
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LowLife",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\lifeCounter02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 66
+                          },
+                          {
+                            "x": 1,
+                            "y": 66
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CriticalLife",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\lifeCounter03.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 1
+                          },
+                          {
+                            "x": 114,
+                            "y": 66
+                          },
+                          {
+                            "x": 1,
+                            "y": 66
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -5647,6 +5983,9 @@
           },
           {
             "objectName": "Balance"
+          },
+          {
+            "objectName": "LifeCounter"
           }
         ]
       },
@@ -5737,14 +6076,6 @@
             },
             {
               "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "PlayerLife"
-              ]
-            },
-            {
-              "type": {
                 "value": "OpacityCapability::OpacityBehavior::SetValue"
               },
               "parameters": [
@@ -5813,30 +6144,6 @@
                 "Balance",
                 "=",
                 "ScreenWidth()/2"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreAutourPos"
-              },
-              "parameters": [
-                "LeftPlatform",
-                "Balance.PointX(\"LeftPlatform\")",
-                "Balance.PointY(\"LeftPlatform\")",
-                "0",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreAutourPos"
-              },
-              "parameters": [
-                "RightPlatform",
-                "Balance.PointX(\"RightPlatform\")",
-                "Balance.PointY(\"RightPlatform\")",
-                "0",
-                "0"
               ]
             }
           ]
@@ -6219,23 +6526,10 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Player damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "TODO : Check player damage management in ShooterTest & PlatformerTest"
-                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -6392,6 +6686,150 @@
                 }
               ],
               "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "=",
+                    "8",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "LifeCounter",
+                    "Animation",
+                    "=",
+                    "\"FullLife\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "<",
+                    "8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    ">=",
+                    "5",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "LifeCounter",
+                    "Animation",
+                    "=",
+                    "\"MediumLife\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "<",
+                    "5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    ">=",
+                    "2",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "LifeCounter",
+                    "Animation",
+                    "=",
+                    "\"LowLife\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "<",
+                    "2",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "LifeCounter",
+                    "Animation",
+                    "=",
+                    "\"CriticalLife\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -6414,6 +6852,36 @@
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreAutourPos"
+                      },
+                      "parameters": [
+                        "LeftPlatform",
+                        "Balance.PointX(\"LeftPlatform\")",
+                        "Balance.PointY(\"LeftPlatform\")",
+                        "0",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreAutourPos"
+                      },
+                      "parameters": [
+                        "RightPlatform",
+                        "Balance.PointX(\"RightPlatform\")",
+                        "Balance.PointY(\"RightPlatform\")",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -6452,32 +6920,8 @@
                           },
                           "parameters": [
                             "Balance",
-                            "-1",
+                            "-.25",
                             ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetCenter"
-                          },
-                          "parameters": [
-                            "LeftPlatform",
-                            "=",
-                            "Balance.PointX(\"LeftPlatform\")",
-                            "=",
-                            "Balance.PointY(\"LeftPlatform\")"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetCenter"
-                          },
-                          "parameters": [
-                            "RightPlatform",
-                            "=",
-                            "Balance.PointX(\"RightPlatform\")",
-                            "=",
-                            "Balance.PointY(\"RightPlatform\")"
                           ]
                         }
                       ]
@@ -6504,32 +6948,8 @@
                           },
                           "parameters": [
                             "Balance",
-                            "1",
+                            ".25",
                             ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetCenter"
-                          },
-                          "parameters": [
-                            "RightPlatform",
-                            "=",
-                            "Balance.PointX(\"RightPlatform\")",
-                            "=",
-                            "Balance.PointY(\"RightPlatform\")"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetCenter"
-                          },
-                          "parameters": [
-                            "LeftPlatform",
-                            "=",
-                            "Balance.PointX(\"LeftPlatform\")",
-                            "=",
-                            "Balance.PointY(\"LeftPlatform\")"
                           ]
                         }
                       ]
@@ -6574,6 +6994,16 @@
                         "LeftPlatform.PointX(\"Switcher\") - LeftPlatformSwitcher.Width()",
                         "=",
                         "LeftPlatform.PointY(\"Switcher\") - LeftPlatformSwitcher.Height()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "LeftPlatformSwitcher",
+                        "Flippable",
+                        "yes"
                       ]
                     }
                   ]
@@ -8179,7 +8609,7 @@
                         "Enemy03.PointY(\"Laser\")",
                         "Enemy03Laser",
                         "270",
-                        "200",
+                        "500",
                         ""
                       ]
                     },
@@ -8188,7 +8618,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "2"
+                        "3"
                       ]
                     },
                     {
