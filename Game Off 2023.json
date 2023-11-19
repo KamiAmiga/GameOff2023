@@ -16,7 +16,7 @@
     "pixelsRounding": false,
     "projectUuid": "83b1718c-bbe3-4a59-9c5e-837fc3417cf3",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptHeight",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -66,72 +66,6 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/Grey Button_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Grey Button_Hovered.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b43e0035dca80ea2fad5c5d65de926dae0185038e5f9cb21d5f20234f30d1c76_Grey Button_Hovered.png",
-          "name": "Grey Button_Hovered.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Grey Button_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Grey Button_Idle.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/da7fc2efa0882eb5dfa0266315f2483c2f68d86a6751dc309ea9e9d0dd4759ba_Grey Button_Idle.png",
-          "name": "Grey Button_Idle.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Grey Button_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Grey Button_Pressed.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/49c35e14af0e1f7aae407455cb944de96328955870e5f1500f63723ad879a42e_Grey Button_Pressed.png",
-          "name": "Grey Button_Pressed.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/New image.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New image",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/New image2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "New image2",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/NewSprite6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -145,24 +79,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\NewSprite6.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite8.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"assets/NewSprite8.png\",\"extension\":\".png\"}",
-        "name": "assets\\NewSprite8.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite8",
         "smoothed": true,
         "userAdded": true
       },
@@ -663,10 +579,44 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/water03.png",
+        "file": "assets/ButtonIdle.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\water03.png",
+        "name": "assets\\ButtonIdle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ButtonHovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ButtonHovered.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/ButtonPressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\ButtonPressed.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Nunito-ExtraBold.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\Nunito-ExtraBold.ttf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gameOverScene.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\gameOverScene.jpg",
         "smoothed": true,
         "userAdded": true
       }
@@ -711,7 +661,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "GreyButton",
+          "name": "StartButton",
           "persistentUuid": "b3390109-6919-42dc-a2b2-469a7c71bd3a",
           "width": 0,
           "x": 510,
@@ -725,7 +675,7 @@
       "objects": [
         {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "GreyButton",
+          "name": "StartButton",
           "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
@@ -733,31 +683,31 @@
           "content": {
             "LeftPadding": 16,
             "RightPadding": 16,
-            "PressedLabelOffsetY": 10,
+            "PressedLabelOffsetY": 6,
             "BottomPadding": 32,
-            "TopPadding": 16,
+            "TopPadding": 20,
             "HoveredFadeOutDuration": 0.25
           },
           "childrenContent": {
             "Hovered": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Hovered.png",
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonHovered.png",
               "tiled": true,
-              "topMargin": 16,
-              "width": 256
+              "topMargin": 32,
+              "width": 264
             },
             "Idle": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Idle.png",
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonIdle.png",
               "tiled": true,
-              "topMargin": 16,
-              "width": 256
+              "topMargin": 32,
+              "width": 264
             },
             "Label": {
               "bold": false,
@@ -765,24 +715,24 @@
               "smoothed": true,
               "underlined": false,
               "string": "Start",
-              "font": "",
+              "font": "assets\\Nunito-ExtraBold.ttf",
               "textAlignment": "center",
-              "characterSize": 60,
+              "characterSize": 48,
               "color": {
-                "b": 79,
-                "g": 72,
-                "r": 72
+                "b": 98,
+                "g": 53,
+                "r": 27
               }
             },
             "Pressed": {
-              "bottomMargin": 16,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Pressed.png",
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonPressed.png",
               "tiled": true,
               "topMargin": 32,
-              "width": 256
+              "width": 264
             }
           }
         }
@@ -791,7 +741,7 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "GreyButton"
+            "objectName": "StartButton"
           }
         ]
       },
@@ -804,7 +754,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "GreyButton",
+                "StartButton",
                 ""
               ]
             }
@@ -973,68 +923,6 @@
           "x": 396,
           "y": 383,
           "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GameOver",
-          "name": "GameOver",
-          "persistentUuid": "84943a09-a737-44e6-ada5-2ed5061e95fc",
-          "width": 0,
-          "x": 407,
-          "y": 163,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 727,
-          "layer": "GameOver",
-          "name": "Overlay",
-          "persistentUuid": "5aea8ab0-283b-4618-b587-549fdb7fe74c",
-          "width": 1283,
-          "x": 0,
-          "y": -2,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "GameOver",
-          "name": "RetryButton",
-          "persistentUuid": "147bebf7-860f-48c0-a7bf-b779f2cebad0",
-          "width": 0,
-          "x": 527,
-          "y": 352,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 32,
-          "height": 106,
-          "layer": "GameOver",
-          "name": "BackToMenuButton",
-          "persistentUuid": "e2b4ed9b-5214-44f8-b086-18d2a3587922",
-          "width": 481,
-          "x": 423,
-          "y": 503,
-          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2919,164 +2807,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "GameOver",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Game Over",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 96,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          }
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Overlay",
-          "texture": "New image2",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "RetryButton",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 10,
-            "BottomPadding": 32,
-            "TopPadding": 16,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Hovered.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 256
-            },
-            "Idle": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Idle.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 256
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "Retry",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 60,
-              "color": {
-                "b": 79,
-                "g": 72,
-                "r": 72
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 16,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Pressed.png",
-              "tiled": true,
-              "topMargin": 32,
-              "width": 256
-            }
-          }
-        },
-        {
-          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
-          "name": "BackToMenuButton",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 16,
-            "RightPadding": 16,
-            "PressedLabelOffsetY": 10,
-            "BottomPadding": 32,
-            "TopPadding": 16,
-            "HoveredFadeOutDuration": 0.25
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Hovered.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 256
-            },
-            "Idle": {
-              "bottomMargin": 32,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Idle.png",
-              "tiled": true,
-              "topMargin": 16,
-              "width": 256
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "Back to menu",
-              "font": "",
-              "textAlignment": "center",
-              "characterSize": 60,
-              "color": {
-                "b": 79,
-                "g": 72,
-                "r": 72
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 16,
-              "height": 106,
-              "leftMargin": 16,
-              "rightMargin": 16,
-              "texture": "Grey Button_Pressed.png",
-              "tiled": true,
-              "topMargin": 32,
-              "width": 256
-            }
-          }
         },
         {
           "adaptCollisionMaskAutomatically": true,
@@ -6545,120 +6275,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Enemy03Attack",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.5,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite8",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 160,
-                        "y": 1200
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 672.5
-                          },
-                          {
-                            "x": 320,
-                            "y": 669.5
-                          },
-                          {
-                            "x": 320,
-                            "y": 1200
-                          },
-                          {
-                            "x": 0,
-                            "y": 1200
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\NewSprite8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 160,
-                        "y": 1200
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 320,
-                            "y": 0
-                          },
-                          {
-                            "x": 320,
-                            "y": 1200
-                          },
-                          {
-                            "x": 0,
-                            "y": 1200
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\NewSprite8.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 160,
-                        "y": 1200
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "assetStoreId": "",
           "bold": false,
           "italic": false,
@@ -7243,18 +6859,6 @@
             "objectName": "Water"
           },
           {
-            "objectName": "GameOver"
-          },
-          {
-            "objectName": "Overlay"
-          },
-          {
-            "objectName": "RetryButton"
-          },
-          {
-            "objectName": "BackToMenuButton"
-          },
-          {
             "objectName": "Weapon"
           },
           {
@@ -7271,9 +6875,6 @@
           },
           {
             "objectName": "Enemy02Bullet"
-          },
-          {
-            "objectName": "Enemy03Attack"
           },
           {
             "objectName": "PlayerLife"
@@ -7365,17 +6966,6 @@
               },
               "parameters": [
                 "RightPlatformSwitcher"
-              ]
-            },
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::SetValue"
-              },
-              "parameters": [
-                "Overlay",
-                "Opacity",
-                "=",
-                "200"
               ]
             },
             {
@@ -7624,109 +7214,91 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "LayerVisible"
+                        "value": "PosX"
                       },
                       "parameters": [
-                        "",
-                        "\"GameOver\""
+                        "Player",
+                        "<",
+                        "CursorX()"
                       ]
                     }
                   ],
-                  "actions": [],
-                  "events": [
+                  "actions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "Player",
-                            "<",
-                            "CursorX()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipX"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Flippable",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipY"
-                          },
-                          "parameters": [
-                            "Weapon",
-                            "Flippable",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipY"
-                          },
-                          "parameters": [
-                            "PlayerBullet",
-                            "Flippable",
-                            ""
-                          ]
-                        }
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flippable",
+                        ""
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PosX"
-                          },
-                          "parameters": [
-                            "Player",
-                            ">",
-                            "CursorX()"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipX"
-                          },
-                          "parameters": [
-                            "Player",
-                            "Flippable",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipY"
-                          },
-                          "parameters": [
-                            "Weapon",
-                            "Flippable",
-                            "yes"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "FlippableCapability::FlippableBehavior::FlipY"
-                          },
-                          "parameters": [
-                            "PlayerBullet",
-                            "Flippable",
-                            "yes"
-                          ]
-                        }
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "Flippable",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "Flippable",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Player",
+                        ">",
+                        "CursorX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Flippable",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "Flippable",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FlippableCapability::FlippableBehavior::FlipY"
+                      },
+                      "parameters": [
+                        "PlayerBullet",
+                        "Flippable",
+                        "yes"
                       ]
                     }
                   ]
@@ -7758,24 +7330,7 @@
                         "=",
                         "Player.PointY(\"Weapon\")"
                       ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": true,
-                        "value": "LayerVisible"
-                      },
-                      "parameters": [
-                        "",
-                        "\"GameOver\""
-                      ]
-                    }
-                  ],
-                  "actions": [
+                    },
                     {
                       "type": {
                         "value": "RotateTowardPosition"
@@ -7788,37 +7343,35 @@
                         ""
                       ]
                     }
-                  ],
-                  "events": [
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "MouseButtonPressed"
-                          },
-                          "parameters": [
-                            "",
-                            "Left"
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "FireBullet::FireBullet::Fire"
-                          },
-                          "parameters": [
-                            "Weapon",
-                            "FireBullet",
-                            "Weapon.PointX(\"BulletPoint\")",
-                            "Weapon.PointY(\"BulletPoint\")",
-                            "PlayerBullet",
-                            "Weapon.Angle()",
-                            "300",
-                            ""
-                          ]
-                        }
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FireBullet::FireBullet::Fire"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "FireBullet",
+                        "Weapon.PointX(\"BulletPoint\")",
+                        "Weapon.PointY(\"BulletPoint\")",
+                        "PlayerBullet",
+                        "Weapon.Angle()",
+                        "300",
+                        ""
                       ]
                     }
                   ]
@@ -8192,71 +7745,53 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
-                        "value": "LayerVisible"
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
                       },
                       "parameters": [
-                        "",
-                        "\"GameOver\""
+                        "Player",
+                        "PlatformerObject",
+                        "LeftPlatform",
+                        ""
                       ]
                     }
                   ],
-                  "actions": [],
-                  "events": [
+                  "actions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject",
-                            "LeftPlatform",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Rotate"
-                          },
-                          "parameters": [
-                            "Balance",
-                            "-.25",
-                            ""
-                          ]
-                        }
+                      "type": {
+                        "value": "Rotate"
+                      },
+                      "parameters": [
+                        "Balance",
+                        "-.25",
+                        ""
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                          },
-                          "parameters": [
-                            "Player",
-                            "PlatformerObject",
-                            "RightPlatform",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "Rotate"
-                          },
-                          "parameters": [
-                            "Balance",
-                            ".25",
-                            ""
-                          ]
-                        }
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "RightPlatform",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Rotate"
+                      },
+                      "parameters": [
+                        "Balance",
+                        ".25",
+                        ""
                       ]
                     }
                   ]
@@ -10296,106 +9831,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ShowLayer"
+                    "value": "Scene"
                   },
                   "parameters": [
                     "",
-                    "\"GameOver\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "Player",
-                    "PlatformerObject",
-                    "no"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PauseTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Enemy01Spawn\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Arreter"
-                  },
-                  "parameters": [
-                    "Enemy01"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "LayerVisible"
-                  },
-                  "parameters": [
-                    "",
-                    "\"GameOver\""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                      },
-                      "parameters": [
-                        "RetryButton",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PushScene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Main\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                      },
-                      "parameters": [
-                        "BackToMenuButton",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"StartScreen\"",
-                        "yes"
-                      ]
-                    }
+                    "\"GameOver\"",
+                    "yes"
                   ]
                 }
               ]
@@ -10541,6 +9982,496 @@
         {
           "name": "RepeatTimer",
           "type": "RepeatEveryXSeconds::RepeatTimer"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "GameOver",
+      "name": "GameOver",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "background",
+          "persistentUuid": "82211697-8ce5-4762-b814-20fa87f9bc2d",
+          "width": 0,
+          "x": -45,
+          "y": -50,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "RetryButton",
+          "persistentUuid": "e551357e-972d-46e5-971f-2d3795ff0fbd",
+          "width": 0,
+          "x": 974,
+          "y": 419,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 111,
+          "layer": "Background",
+          "name": "BackHomeButton",
+          "persistentUuid": "3a94b740-b724-4514-b265-4ead4f0bd8bb",
+          "width": 429,
+          "x": 816,
+          "y": 555,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "Title",
+          "persistentUuid": "3ecfd0a0-1137-4a57-828e-502ef0087026",
+          "width": 0,
+          "x": 682,
+          "y": 41,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\gameOverScene.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1380,
+                            "y": 0
+                          },
+                          {
+                            "x": 1380,
+                            "y": 820
+                          },
+                          {
+                            "x": 0,
+                            "y": 820
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "RetryButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonHovered.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 264
+            },
+            "Idle": {
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonIdle.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 264
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Retry",
+              "font": "assets\\Nunito-ExtraBold.ttf",
+              "textAlignment": "center",
+              "characterSize": 48,
+              "color": {
+                "b": 98,
+                "g": 53,
+                "r": 27
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonPressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 264
+            }
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "BackHomeButton",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 24,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonHovered.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 264
+            },
+            "Idle": {
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonIdle.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 264
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Back to Home",
+              "font": "assets\\Nunito-ExtraBold.ttf",
+              "textAlignment": "center",
+              "characterSize": 48,
+              "color": {
+                "b": 98,
+                "g": 53,
+                "r": 27
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 38,
+              "height": 111,
+              "leftMargin": 50,
+              "rightMargin": 150,
+              "texture": "assets\\ButtonPressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 264
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Title",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Game Over",
+          "font": "assets\\Nunito-ExtraBold.ttf",
+          "textAlignment": "left",
+          "characterSize": 104,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "background"
+          },
+          {
+            "objectName": "RetryButton"
+          },
+          {
+            "objectName": "BackHomeButton"
+          },
+          {
+            "objectName": "Title"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MontreSouris"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "RetryButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BackHomeButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"StartScreen\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Background",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
         },
         {
           "name": "Resizable",
