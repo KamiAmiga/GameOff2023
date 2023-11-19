@@ -20,8 +20,8 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "Game Off 2023",
-    "description": "",
+    "name": "Fish & Shift",
+    "description": "Fight against waves of fish enemies, and avoid the balance to reach the deadly water below !\nThis game was made during the Game Off 2023, which theme was : \"Scale\"",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -50,8 +50,12 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "GwGomcOjseQQb18iemQK3WZrOUh2"
+    ],
+    "authorUsernames": [
+      "KamiAmiga"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -965,19 +969,13 @@
       "variables": [
         {
           "folded": true,
-          "name": "Enemy03SpawnSide",
-          "type": "string",
-          "value": "left"
-        },
-        {
-          "folded": true,
           "name": "Enemy03SpawnRight",
           "type": "boolean",
           "value": false
         },
         {
           "folded": true,
-          "name": "Enemy03SpawnX",
+          "name": "Wave",
           "type": "number",
           "value": 0
         }
@@ -1167,7 +1165,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "name": "CursorPointer",
           "persistentUuid": "06092f58-e6fe-423f-a026-de4ef3afc565",
           "width": 0,
@@ -1272,7 +1270,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "name": "PlayerLife",
           "persistentUuid": "4076f838-1122-4aba-a4ca-0b1f36110b3f",
           "width": 0,
@@ -1287,7 +1285,7 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "name": "LifeCounter",
           "persistentUuid": "51bc5074-2c3f-46f2-9d71-f813481f8fbf",
           "width": 0,
@@ -1720,11 +1718,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 5,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 5,
@@ -1738,11 +1736,11 @@
                         [
                           {
                             "x": 362,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 367,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 367,
@@ -1830,11 +1828,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 5,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 5,
@@ -1848,11 +1846,11 @@
                         [
                           {
                             "x": 362,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 367,
-                            "y": 225
+                            "y": 266
                           },
                           {
                             "x": 367,
@@ -3648,7 +3646,7 @@
               "ExponentialCoolingRate": 0.3,
               "BulletLayer": "",
               "RandomizedAngle": 0,
-              "BulletSpeedVariance": 200
+              "BulletSpeedVariance": 100
             },
             {
               "name": "Health",
@@ -6420,30 +6418,30 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 210.5,
-                        "y": 259.5
+                        "y": 195.5
                       },
                       "centerPoint": {
                         "automatic": false,
                         "name": "centre",
                         "x": 210.5,
-                        "y": 259.5
+                        "y": 195.5
                       },
                       "customCollisionMask": [
                         [
                           {
-                            "x": 30,
+                            "x": 25,
                             "y": 100
                           },
                           {
-                            "x": 360,
+                            "x": 370,
                             "y": 100
                           },
                           {
-                            "x": 360,
+                            "x": 370,
                             "y": 170
                           },
                           {
-                            "x": 30,
+                            "x": 25,
                             "y": 170
                           }
                         ]
@@ -7072,16 +7070,6 @@
             },
             {
               "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "Enemy03SpawnX",
-                "=",
-                "LeftPlatform.CenterX()"
-              ]
-            },
-            {
-              "type": {
                 "value": "SetCenter"
               },
               "parameters": [
@@ -7164,6 +7152,15 @@
                 "40",
                 "1"
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Wave\""
+              ]
             }
           ]
         },
@@ -7213,7 +7210,44 @@
                 "PlayerLife",
                 "Text",
                 "=",
-                "ToString(Player.Health::Health())"
+                "ToString(Wave)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Wave\"",
+                ">",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Wave",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Wave\""
               ]
             }
           ]
@@ -7223,6 +7257,7 @@
           "colorG": 129,
           "colorR": 42,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7232,6 +7267,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Player movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -7914,7 +7950,7 @@
                       },
                       "parameters": [
                         "Balance",
-                        "-.25",
+                        "-.25 - (Wave * .05)",
                         ""
                       ]
                     }
@@ -7942,7 +7978,7 @@
                       },
                       "parameters": [
                         "Balance",
-                        ".25",
+                        ".25 + (Wave * .05)",
                         ""
                       ]
                     }
@@ -8192,7 +8228,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy01 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8232,7 +8267,7 @@
                         "",
                         "\"Enemy01Spawn\"",
                         ">",
-                        "3"
+                        "4 - (Wave * .2)"
                       ]
                     },
                     {
@@ -8335,7 +8370,7 @@
                         "Enemy01",
                         "BoidsMovement",
                         "Player",
-                        "200",
+                        "200 + (Wave * 10)",
                         ""
                       ]
                     },
@@ -8348,7 +8383,7 @@
                         "BoidsMovement",
                         "PlayerBullet",
                         "200",
-                        "2000",
+                        "2000 + (Wave * 20)",
                         ""
                       ]
                     }
@@ -8590,7 +8625,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -8624,13 +8658,23 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Wave",
+                        ">",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "CompareTimer"
                       },
                       "parameters": [
                         "",
                         "\"Enemy02Spawn\"",
                         ">",
-                        "6"
+                        "5 - (Wave * .3)"
                       ]
                     },
                     {
@@ -8650,7 +8694,7 @@
                         "",
                         "Enemy02",
                         "<",
-                        "3"
+                        "3 + floor(Wave / 3)"
                       ]
                     }
                   ],
@@ -8761,7 +8805,7 @@
                             "Enemy02",
                             "XDestination",
                             "=",
-                            "RandomInRange(RightPlatform.BoundingBoxLeft() + Enemy02.Width() * .25, RightPlatform.BoundingBoxRight() - Enemy02.Width() * .75)"
+                            "RandomInRange(RightPlatform.BoundingBoxLeft() + Enemy02.Width() * .75, RightPlatform.BoundingBoxRight() - Enemy02.Width() * .25)"
                           ]
                         },
                         {
@@ -8812,7 +8856,7 @@
                         "Enemy02",
                         "Enemy02.XDestination",
                         "Enemy02.YDestination",
-                        "60",
+                        "60 + (Wave * 5)",
                         "0"
                       ]
                     }
@@ -8913,6 +8957,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9337,7 +9382,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy03 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9369,6 +9413,16 @@
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Wave",
+                        ">",
+                        "3"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "CompareTimer"
@@ -9665,7 +9719,7 @@
                         "Enemy03.PointY(\"Laser\")",
                         "Enemy03Laser",
                         "270",
-                        "500",
+                        "420",
                         ""
                       ]
                     },
@@ -9743,7 +9797,7 @@
                       "parameters": [
                         "Player",
                         "Health",
-                        "8",
+                        "1",
                         "",
                         "",
                         ""
@@ -9916,7 +9970,7 @@
                         "enemies",
                         "Opacity",
                         "=",
-                        "175"
+                        "150"
                       ]
                     },
                     {
@@ -9933,7 +9987,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        ".2"
+                        ".3"
                       ]
                     },
                     {
