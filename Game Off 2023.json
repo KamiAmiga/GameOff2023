@@ -623,16 +623,6 @@
       {
         "file": "assets/New sound effect.wav",
         "kind": "audio",
-        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Laser/shoot 4\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.2220992659790273,\\\"sustainPunch\\\":0,\\\"decay\\\":0.05,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":0,\\\"frequency\\\":2067.137691423848,\\\"frequencySweep\\\":-1458.5314492973198,\\\"frequencyDeltaSweep\\\":-320.7287781616527,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":1,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"breaker\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0.22903767602206426,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":10,\\\"squareDutySweep\\\":-25,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":20}\",\"name\":\"New sound effect\"}}",
-        "name": "New sound effect",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/New sound effect.wav",
-        "kind": "audio",
         "metadata": "{\"localFilePath\":\"assets/New sound effect.wav\",\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Laser/shoot 7\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.09811972385034262,\\\"sustainPunch\\\":80,\\\"decay\\\":0.04,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":1000,\\\"frequencySweep\\\":-1300,\\\"frequencyDeltaSweep\\\":-500,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"breaker\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":15,\\\"squareDutySweep\\\":-60,\\\"flangerOffset\\\":1,\\\"flangerOffsetSweep\\\":4,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"assets\\\\New sound effect.wav\"}}",
         "name": "assets\\New sound effect.wav",
         "preloadAsMusic": false,
@@ -665,34 +655,6 @@
         }
       },
       {
-        "file": "assets/Sound 2.aac",
-        "kind": "audio",
-        "metadata": "",
-        "name": "381acc6a53ce1863e48e426077421e293006a07d7b00fb77d3f0a715edfa2e4b_Sound 2.aac",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Sound/381acc6a53ce1863e48e426077421e293006a07d7b00fb77d3f0a715edfa2e4b_Sound 2.aac",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
-        "file": "assets/Sound 4.aac",
-        "kind": "audio",
-        "metadata": "",
-        "name": "63e01a098ce2342b1087362cc58facd252a36f3bec2302eecc011a78ace9f805_Sound 4.aac",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": true,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter by Pixel boy/Sound/63e01a098ce2342b1087362cc58facd252a36f3bec2302eecc011a78ace9f805_Sound 4.aac",
-          "name": "gdevelop-asset-store"
-        }
-      },
-      {
         "file": "assets/New sound effect3.wav",
         "kind": "audio",
         "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Laser/shoot 2\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.5,\\\"sustainPunch\\\":30,\\\"decay\\\":0.5,\\\"tremoloDepth\\\":10,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":1000,\\\"frequencySweep\\\":-500,\\\"frequencyDeltaSweep\\\":-300,\\\"repeatFrequency\\\":10,\\\"frequencyJump1Onset\\\":0,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":1,\\\"harmonicsFalloff\\\":0.33,\\\"waveform\\\":\\\"sawtooth\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":10,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":55,\\\"squareDutySweep\\\":-75,\\\"flangerOffset\\\":1,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect3\"},\"localFilePath\":\"assets/New sound effect3.wav\"}",
@@ -701,6 +663,48 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Baltic Levity.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "44e0d788c2a9f24678c046690411b61a7b80ab5ef8e6d27d7b07ff0eda1942b4_Baltic Levity.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Comedy/44e0d788c2a9f24678c046690411b61a7b80ab5ef8e6d27d7b07ff0eda1942b4_Baltic Levity.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Hit 3.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "088e0b9d13d953fab6044c64cde8aa941c06c904ccf7dc9fe5f6bc4f62fd558f_Hit 3.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Hit/088e0b9d13d953fab6044c64cde8aa941c06c904ccf7dc9fe5f6bc4f62fd558f_Hit 3.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Hit 5.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "1f1ebe8108992cd14f6e6efd76a9b665945c890b833501122abe84f5c6519b24_Hit 5.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/Hit/1f1ebe8108992cd14f6e6efd76a9b665945c890b833501122abe84f5c6519b24_Hit 5.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -1169,7 +1173,7 @@
           "width": 0,
           "x": 1188,
           "y": 193,
-          "zOrder": 23,
+          "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1371,7 +1375,7 @@
                         {
                           "name": "Weapon",
                           "x": 85,
-                          "y": 76
+                          "y": 85
                         }
                       ],
                       "originPoint": {
@@ -1425,7 +1429,7 @@
                         {
                           "name": "Weapon",
                           "x": 85,
-                          "y": 76
+                          "y": 85
                         }
                       ],
                       "originPoint": {
@@ -1467,7 +1471,7 @@
                         {
                           "name": "Weapon",
                           "x": 85,
-                          "y": 76
+                          "y": 85
                         }
                       ],
                       "originPoint": {
@@ -1509,7 +1513,7 @@
                         {
                           "name": "Weapon",
                           "x": 85,
-                          "y": 76
+                          "y": 85
                         }
                       ],
                       "originPoint": {
@@ -1551,7 +1555,7 @@
                         {
                           "name": "Weapon",
                           "x": 85,
-                          "y": 76
+                          "y": 85
                         }
                       ],
                       "originPoint": {
@@ -1606,7 +1610,7 @@
                         {
                           "name": "Weapon",
                           "x": 86,
-                          "y": 84
+                          "y": 85
                         }
                       ],
                       "originPoint": {
@@ -2967,7 +2971,7 @@
                         "automatic": false,
                         "name": "centre",
                         "x": 32,
-                        "y": 24
+                        "y": 26
                       },
                       "customCollisionMask": [
                         [
@@ -3027,8 +3031,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 6.5,
-                        "y": 8.5
+                        "x": 1,
+                        "y": 12.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -6386,7 +6390,7 @@
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Enemy03Laser",
           "type": "Sprite",
@@ -6427,20 +6431,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 24,
-                            "y": 47
+                            "x": 30,
+                            "y": 100
                           },
                           {
-                            "x": 380,
-                            "y": 47
+                            "x": 360,
+                            "y": 100
                           },
                           {
-                            "x": 380,
-                            "y": 204
+                            "x": 360,
+                            "y": 170
                           },
                           {
-                            "x": 24,
-                            "y": 204
+                            "x": 30,
+                            "y": 170
                           }
                         ]
                       ]
@@ -6476,7 +6480,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
-                        "y": 0
+                        "y": 30
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -7060,20 +7064,20 @@
             },
             {
               "type": {
+                "value": "CacheSouris"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ModVarScene"
               },
               "parameters": [
                 "Enemy03SpawnX",
                 "=",
                 "LeftPlatform.CenterX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "CacheSouris"
-              },
-              "parameters": [
-                ""
               ]
             },
             {
@@ -7148,6 +7152,18 @@
                 "Water",
                 "Animation"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "44e0d788c2a9f24678c046690411b61a7b80ab5ef8e6d27d7b07ff0eda1942b4_Baltic Levity.aac",
+                "yes",
+                "40",
+                "1"
+              ]
             }
           ]
         },
@@ -7157,7 +7173,7 @@
           "actions": [
             {
               "type": {
-                "value": "MettreXY"
+                "value": "SetCenter"
               },
               "parameters": [
                 "CursorPointer",
@@ -7173,8 +7189,8 @@
               },
               "parameters": [
                 "CursorPointer",
-                "Weapon.CenterX()",
-                "Weapon.CenterY()",
+                "Weapon.PointX(\"BulletPoint\")",
+                "Weapon.PointY(\"BulletPoint\")",
                 "0",
                 ""
               ]
@@ -7411,18 +7427,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "MettreXY"
-                      },
-                      "parameters": [
-                        "Weapon",
-                        "=",
-                        "Player.PointX(\"Weapon\")",
-                        "=",
-                        "Player.PointY(\"Weapon\")"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "RotateTowardPosition"
                       },
                       "parameters": [
@@ -7431,6 +7435,18 @@
                         "CursorY()",
                         "0",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Weapon",
+                        "=",
+                        "Player.PointX(\"Weapon\")",
+                        "=",
+                        "Player.PointY(\"Weapon\")"
                       ]
                     }
                   ]
@@ -7489,7 +7505,7 @@
                         "",
                         "assets\\New sound effect.wav",
                         "",
-                        "30",
+                        "20",
                         "RandomFloatInRange(.9,1)"
                       ]
                     },
@@ -7612,6 +7628,18 @@
                             "Player",
                             "PlatformerObject",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "088e0b9d13d953fab6044c64cde8aa941c06c904ccf7dc9fe5f6bc4f62fd558f_Hit 3.aac",
+                            "",
+                            "70",
+                            "1"
                           ]
                         }
                       ]
@@ -8885,7 +8913,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy02 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9826,7 +9853,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemies damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9859,6 +9885,18 @@
                         "",
                         "",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "1f1ebe8108992cd14f6e6efd76a9b665945c890b833501122abe84f5c6519b24_Hit 5.aac",
+                        "",
+                        "60",
+                        "1"
                       ]
                     },
                     {
@@ -10086,6 +10124,15 @@
                     "",
                     "\"GameOver\"",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
                   ]
                 }
               ]
