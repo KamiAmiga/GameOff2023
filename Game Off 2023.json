@@ -1079,6 +1079,24 @@
         "name": "assets\\shellBonus.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/narwhalIced.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\narwhalIced.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/balanceIced.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\balanceIced.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1117,7 +1135,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.32517382050855653,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2217,7 +2235,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8141881203709928,
+        "zoomFactor": 0.5653158055126322,
         "windowMask": true
       },
       "objectsGroups": [
@@ -2240,6 +2258,9 @@
           "objects": [
             {
               "name": "healthBonus"
+            },
+            {
+              "name": "iceBonus"
             }
           ]
         }
@@ -7990,7 +8011,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -8576,6 +8597,54 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Iced",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 8,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\narwhalIced.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 249,
+                        "y": 332
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 391,
+                            "y": 1
+                          },
+                          {
+                            "x": 391,
+                            "y": 660
+                          },
+                          {
+                            "x": 1,
+                            "y": 660
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -8590,7 +8659,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -8600,6 +8669,80 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\balance.png",
+                      "points": [
+                        {
+                          "name": "Pivot",
+                          "x": 414,
+                          "y": 16
+                        },
+                        {
+                          "name": "LeftPlatform",
+                          "x": 47,
+                          "y": 154
+                        },
+                        {
+                          "name": "RightPlatform",
+                          "x": 781,
+                          "y": 154
+                        },
+                        {
+                          "name": "RightBonus",
+                          "x": 770,
+                          "y": 117
+                        },
+                        {
+                          "name": "LeftBonus",
+                          "x": 58,
+                          "y": 117
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 414,
+                        "y": 16
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 827,
+                            "y": 1
+                          },
+                          {
+                            "x": 827,
+                            "y": 175
+                          },
+                          {
+                            "x": 1,
+                            "y": 175
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Iced",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 8,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\balanceIced.png",
                       "points": [
                         {
                           "name": "Pivot",
@@ -8912,7 +9055,7 @@
           "variables": [
             {
               "folded": true,
-              "name": "BonusName",
+              "name": "bonusName",
               "type": "string",
               "value": "health"
             }
@@ -9319,6 +9462,73 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "iceBonus",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "bonusName",
+              "type": "string",
+              "value": "ice"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\iceBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -9401,6 +9611,9 @@
           },
           {
             "objectName": "RightPlatformBonus"
+          },
+          {
+            "objectName": "iceBonus"
           }
         ]
       },
@@ -10437,7 +10650,7 @@
                     "value": "CompareObjectTimer"
                   },
                   "parameters": [
-                    "healthBonus",
+                    "bonuses",
                     "\"isOnScene\"",
                     ">=",
                     "4"
@@ -10450,288 +10663,521 @@
                     "value": "Delete"
                   },
                   "parameters": [
-                    "healthBonus",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
                     "bonuses",
-                    "",
-                    "",
                     ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject",
-                        "LeftPlatform",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "LeftPlatformBonus",
-                        "currentBonus",
-                        "=",
-                        "bonuses.VariableString(BonusName)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeSprite"
-                      },
-                      "parameters": [
-                        "LeftPlatformBonus",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "LeftPlatformBonus",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "bonuses",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
-                      },
-                      "parameters": [
-                        "Player",
-                        "PlatformerObject",
-                        "RightPlatform",
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "RightPlatformBonus",
-                        "currentBonus",
-                        "=",
-                        "bonuses.VariableString(BonusName)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ChangeSprite"
-                      },
-                      "parameters": [
-                        "RightPlatformBonus",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Montre"
-                      },
-                      "parameters": [
-                        "RightPlatformBonus",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "bonuses",
-                        ""
-                      ]
-                    }
                   ]
                 }
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "MouseButtonFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Right\""
-                  ]
-                }
-              ],
-              "actions": [],
+              "colorB": 95,
+              "colorG": 219,
+              "colorR": 70,
+              "creationTime": 0,
+              "name": "Pick Bonus",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                        "value": "MouseButtonReleased"
                       },
                       "parameters": [
-                        "Player",
-                        "PlatformerObject",
-                        "LeftPlatform",
-                        ""
+                        "",
+                        "Left"
                       ]
                     },
                     {
                       "type": {
-                        "value": "VarObjetTxt"
+                        "value": "SourisSurObjet"
                       },
                       "parameters": [
-                        "LeftPlatformBonus",
-                        "currentBonus",
-                        "=",
-                        "\"health\""
+                        "bonuses",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Health::Health::SetHealth"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Health",
-                        "8",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "LeftPlatform",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "LeftPlatformBonus",
+                            "currentBonus",
+                            "=",
+                            "bonuses.VariableString(bonusName)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "LeftPlatformBonus",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "bonuses",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "healthBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "iceBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "LeftPlatformBonus",
-                        "currentBonus",
-                        "=",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "LeftPlatformBonus"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "RightPlatform",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjetTxt"
+                          },
+                          "parameters": [
+                            "RightPlatformBonus",
+                            "currentBonus",
+                            "=",
+                            "bonuses.VariableString(bonusName)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "RightPlatformBonus",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "bonuses",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "healthBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "iceBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "=",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": []
+                        }
                       ]
                     }
                   ]
-                },
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 95,
+              "colorG": 219,
+              "colorR": 70,
+              "creationTime": 0,
+              "name": "Trigger Bonus",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                        "value": "KeyReleased"
                       },
                       "parameters": [
-                        "Player",
-                        "PlatformerObject",
-                        "RightPlatform",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjetTxt"
-                      },
-                      "parameters": [
-                        "RightPlatformBonus",
-                        "currentBonus",
-                        "=",
-                        "\"health\""
+                        "",
+                        "Down"
                       ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Health::Health::SetHealth"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Health",
-                        "8",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "LeftPlatform",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"health\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::SetHealth"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Health",
+                                "8",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"ice\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Balance",
+                                "Animation",
+                                "=",
+                                "\"Iced\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Narwhal",
+                                "Animation",
+                                "=",
+                                "\"Iced\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
-                      "type": {
-                        "value": "ModVarObjetTxt"
-                      },
-                      "parameters": [
-                        "RightPlatformBonus",
-                        "currentBonus",
-                        "=",
-                        "\"\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Cache"
-                      },
-                      "parameters": [
-                        "RightPlatformBonus"
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                          },
+                          "parameters": [
+                            "Player",
+                            "PlatformerObject",
+                            "RightPlatform",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"health\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::SetHealth"
+                              },
+                              "parameters": [
+                                "Player",
+                                "Health",
+                                "8",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"ice\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Balance",
+                                "Animation",
+                                "=",
+                                "\"Iced\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Narwhal",
+                                "Animation",
+                                "=",
+                                "\"Iced\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Cache"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus"
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "parameters": []
@@ -10741,7 +11187,6 @@
           "colorG": 170,
           "colorR": 71,
           "creationTime": 0,
-          "folded": true,
           "name": "Platforms",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10751,7 +11196,6 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
-              "folded": true,
               "name": "Platforms movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10791,6 +11235,82 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Balance",
+                        "Animation"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Balance",
+                        "Animation",
+                        "=",
+                        "\"Iced\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Balance",
+                        "Animation",
+                        "=",
+                        "\"Default\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "Narwhal",
+                        "Animation"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Narwhal",
+                        "Animation",
+                        "=",
+                        "\"Iced\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "Narwhal",
+                        "Animation",
+                        "=",
+                        "\"Default\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "PlatformBehavior::IsObjectOnGivenFloor"
                       },
                       "parameters": [
@@ -10798,6 +11318,17 @@
                         "PlatformerObject",
                         "LeftPlatform",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Balance",
+                        "Animation",
+                        "!=",
+                        "\"Iced\""
                       ]
                     }
                   ],
@@ -10808,7 +11339,7 @@
                       },
                       "parameters": [
                         "Balance",
-                        "-.25 - (Wave * .075)",
+                        "min(-1,-.3 - (Wave * .075))",
                         ""
                       ]
                     }
@@ -10827,6 +11358,17 @@
                         "RightPlatform",
                         ""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "Balance",
+                        "Animation",
+                        "!=",
+                        "\"Iced\""
+                      ]
                     }
                   ],
                   "actions": [
@@ -10836,7 +11378,7 @@
                       },
                       "parameters": [
                         "Balance",
-                        ".25 + (Wave * .075)",
+                        "max(1, .3 + (Wave * .075))",
                         ""
                       ]
                     }
@@ -10850,7 +11392,6 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
-              "folded": true,
               "name": "Platforms switchers",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11087,7 +11628,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy01 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11127,7 +11667,7 @@
                         "",
                         "\"Enemy01Spawn\"",
                         ">",
-                        "3 - (Wave * .2)"
+                        "max(2, 4 - (Wave * .1))"
                       ]
                     },
                     {
@@ -11486,7 +12026,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11536,7 +12075,7 @@
                         "",
                         "\"Enemy02Spawn\"",
                         ">",
-                        "5 - (Wave * .3)"
+                        "max(3, 5 - (Wave * .1))"
                       ]
                     },
                     {
@@ -12244,7 +12783,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy03 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -12294,7 +12832,7 @@
                         "",
                         "\"Enemy03Spawn\"",
                         ">",
-                        "5 - Wave * .2"
+                        "max(4, 8 - Wave * .05)"
                       ]
                     },
                     {
@@ -12945,7 +13483,7 @@
                         "Enemy01",
                         "lootBonus",
                         "=",
-                        "RandomInRange(0,10)"
+                        "RandomInRange(0,15)"
                       ]
                     },
                     {
@@ -12970,7 +13508,7 @@
                             "Enemy01",
                             "lootBonus",
                             "=",
-                            "10"
+                            "0"
                           ]
                         }
                       ],
@@ -12993,6 +13531,45 @@
                           },
                           "parameters": [
                             "healthBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Enemy01",
+                            "lootBonus",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "iceBonus",
+                            "Enemy01.CenterX()",
+                            "Enemy01.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "iceBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -13033,7 +13610,7 @@
                         "Enemy02",
                         "lootBonus",
                         "=",
-                        "RandomInRange(0,15)"
+                        "RandomInRange(0,20)"
                       ]
                     },
                     {
@@ -13058,7 +13635,7 @@
                             "Enemy02",
                             "lootBonus",
                             "=",
-                            "15"
+                            "0"
                           ]
                         }
                       ],
@@ -13081,6 +13658,64 @@
                           },
                           "parameters": [
                             "healthBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Enemy02",
+                                "lootBonus",
+                                "=",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "Enemy02",
+                                "lootBonus",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "iceBonus",
+                            "Enemy02.CenterX()",
+                            "Enemy02.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "iceBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -13115,6 +13750,17 @@
                     },
                     {
                       "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemy03",
+                        "lootBonus",
+                        "=",
+                        "RandomInRange(0,3)"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Delete"
                       },
                       "parameters": [
@@ -13138,6 +13784,47 @@
                       "parameters": [
                         "",
                         "\"Enemy03Spawn\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Enemy03",
+                            "lootBonus",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "healthBonus",
+                            "Enemy03.CenterX()",
+                            "Enemy03.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "healthBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
                       ]
                     }
                   ]
