@@ -1115,6 +1115,25 @@
         "name": "assets\\scalePlateShell01.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/electricShockwave.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\electricShockwave.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/New sound effect4.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Explosion 4\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.6182870537696039,\\\"sustainPunch\\\":0,\\\"decay\\\":0.17404619835517798,\\\"tremoloDepth\\\":4,\\\"tremoloFrequency\\\":0,\\\"frequency\\\":1686.5689147584737,\\\"frequencySweep\\\":-14.633017502355589,\\\"frequencyDeltaSweep\\\":-2400,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":10,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":3,\\\"harmonicsFalloff\\\":0.54,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0.22903767602206426,\\\"vibratoFrequency\\\":1.6633894960377607,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":5,\\\"flangerOffsetSweep\\\":7,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"},\"localFilePath\":\"assets/New sound effect4.wav\"}",
+        "name": "New sound effect",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2282,6 +2301,9 @@
             },
             {
               "name": "ShellBonus"
+            },
+            {
+              "name": "MedusaBonus"
             }
           ]
         }
@@ -9807,6 +9829,138 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "MedusaBonus",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "bonusName",
+              "type": "string",
+              "value": "medusa"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\jellyfishBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ElectricShockwave",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\electricShockwave.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 489.5,
+                        "y": 294.5
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 86,
+                            "y": 23
+                          },
+                          {
+                            "x": 828,
+                            "y": 23
+                          },
+                          {
+                            "x": 828,
+                            "y": 613
+                          },
+                          {
+                            "x": 86,
+                            "y": 613
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -9880,6 +10034,12 @@
           },
           {
             "objectName": "ShellBonus"
+          },
+          {
+            "objectName": "MedusaBonus"
+          },
+          {
+            "objectName": "ElectricShockwave"
           },
           {
             "objectName": "Score"
@@ -11099,6 +11259,34 @@
                                 "LeftPlatformBonus",
                                 "currentBonus",
                                 "=",
+                                "MedusaBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
                                 "ShellBonus.VariableString(bonusName)"
                               ]
                             }
@@ -11217,6 +11405,34 @@
                                 "RightPlatformBonus",
                                 "=",
                                 "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "MedusaBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "=",
+                                "2"
                               ]
                             }
                           ]
@@ -11377,6 +11593,89 @@
                                 "LeftPlatformBonus",
                                 "currentBonus",
                                 "=",
+                                "\"medusa\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ElectricShockwave",
+                                "ScreenWidth()/2",
+                                "ScreenHeight()/2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ElectricShockwave",
+                                "Scale",
+                                "=",
+                                "0.05"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectScaleTween2"
+                              },
+                              "parameters": [
+                                "ElectricShockwave",
+                                "Tween",
+                                "\"ScaleIn\"",
+                                "2.5",
+                                "2.5",
+                                "\"easeInOutCubic\"",
+                                ".5",
+                                "no",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                              },
+                              "parameters": [
+                                "ElectricShockwave",
+                                "Tween",
+                                "\"FadeOut\"",
+                                "0",
+                                "\"easeInOutQuart\"",
+                                ".8",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "New sound effect",
+                                "",
+                                "60",
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
                                 "\"shell\""
                               ]
                             }
@@ -11504,6 +11803,89 @@
                                 "Animation",
                                 "=",
                                 "\"Iced\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"medusa\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "ElectricShockwave",
+                                "ScreenWidth()/2",
+                                "ScreenHeight()/2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ScalableCapability::ScalableBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "ElectricShockwave",
+                                "Scale",
+                                "=",
+                                "0.05"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectScaleTween2"
+                              },
+                              "parameters": [
+                                "ElectricShockwave",
+                                "Tween",
+                                "\"ScaleIn\"",
+                                "3",
+                                "3",
+                                "\"easeInOutCubic\"",
+                                ".5",
+                                "no",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                              },
+                              "parameters": [
+                                "ElectricShockwave",
+                                "Tween",
+                                "\"FadeOut\"",
+                                "0",
+                                "\"easeInOutQuart\"",
+                                ".8",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlaySound"
+                              },
+                              "parameters": [
+                                "",
+                                "New sound effect",
+                                "",
+                                "60",
+                                "1"
                               ]
                             }
                           ]
@@ -13587,7 +13969,6 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
-              "folded": true,
               "name": "Enemy03 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -14057,6 +14438,36 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "ElectricShockwave",
+                        "enemies",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetHealth"
+                      },
+                      "parameters": [
+                        "enemies",
+                        "Health",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "Health::Health::IsDead"
                       },
                       "parameters": [
@@ -14397,7 +14808,7 @@
                         "Enemy03",
                         "lootBonus",
                         "=",
-                        "RandomInRange(0,3)"
+                        "RandomInRange(0,2)"
                       ]
                     },
                     {
@@ -14425,6 +14836,34 @@
                       "parameters": [
                         "",
                         "\"Enemy03Spawn\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "FadeSoundVolume"
+                      },
+                      "parameters": [
+                        "",
+                        "0",
+                        "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "StopSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "0"
                       ]
                     }
                   ],
@@ -14463,6 +14902,45 @@
                           },
                           "parameters": [
                             "HealthBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Enemy03",
+                            "lootBonus",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "MedusaBonus",
+                            "Enemy03.CenterX()",
+                            "Enemy03.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "MedusaBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -14769,6 +15247,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
