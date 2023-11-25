@@ -1043,6 +1043,42 @@
         "name": "assets\\narwhal01.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/healthBonus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\healthBonus.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/iceBonus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\iceBonus.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/jellyfishBonus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\jellyfishBonus.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/shellBonus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\shellBonus.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2181,7 +2217,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210184,
+        "zoomFactor": 0.8141881203709928,
         "windowMask": true
       },
       "objectsGroups": [
@@ -2196,6 +2232,14 @@
             },
             {
               "name": "Enemy03"
+            }
+          ]
+        },
+        {
+          "name": "bonuses",
+          "objects": [
+            {
+              "name": "healthBonus"
             }
           ]
         }
@@ -2570,7 +2614,37 @@
           "width": 0,
           "x": 407,
           "y": 21,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "LeftPlatformBonus",
+          "persistentUuid": "c40f7b76-2890-45dc-b1cd-a3938585a609",
+          "width": 0,
+          "x": 270,
+          "y": 136,
           "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "RightPlatformBonus",
+          "persistentUuid": "cfa9db2d-1244-4531-9b06-4ff7ac6da608",
+          "width": 0,
+          "x": 970,
+          "y": 136,
+          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2934,7 +3008,14 @@
           "name": "LeftPlatform",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "Bonus",
+              "type": "string",
+              "value": ""
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -3049,7 +3130,14 @@
           "name": "RightPlatform",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "Bonus",
+              "type": "string",
+              "value": ""
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -3167,9 +3255,9 @@
           "variables": [
             {
               "folded": true,
-              "name": "isInScreen",
-              "type": "boolean",
-              "value": false
+              "name": "lootBonus",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -4448,6 +4536,12 @@
               "name": "ScreenSide",
               "type": "string",
               "value": ""
+            },
+            {
+              "folded": true,
+              "name": "lootBonus",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -4913,6 +5007,12 @@
               "name": "spawnSide",
               "type": "string",
               "value": "right"
+            },
+            {
+              "folded": true,
+              "name": "lootBonus",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [],
@@ -8515,6 +8615,16 @@
                           "name": "RightPlatform",
                           "x": 781,
                           "y": 154
+                        },
+                        {
+                          "name": "RightBonus",
+                          "x": 770,
+                          "y": 117
+                        },
+                        {
+                          "name": "LeftBonus",
+                          "x": 58,
+                          "y": 117
                         }
                       ],
                       "originPoint": {
@@ -8792,6 +8902,423 @@
           "absoluteCoordinates": false,
           "clearBetweenFrames": true,
           "antialiasing": "none"
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "healthBonus",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "BonusName",
+              "type": "string",
+              "value": "health"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\healthBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "LeftPlatformBonus",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "currentBonus",
+              "type": "string",
+              "value": ""
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\healthBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\iceBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\jellyfishBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\shellBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "RightPlatformBonus",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "currentBonus",
+              "type": "string",
+              "value": ""
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\healthBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\iceBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\jellyfishBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\shellBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8865,6 +9392,15 @@
           },
           {
             "objectName": "SceneTransition"
+          },
+          {
+            "objectName": "healthBonus"
+          },
+          {
+            "objectName": "LeftPlatformBonus"
+          },
+          {
+            "objectName": "RightPlatformBonus"
           }
         ]
       },
@@ -8900,35 +9436,44 @@
             },
             {
               "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "LeftPlatformBonus"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "RightPlatformBonus"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "LeftPlatformBonus",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "RightPlatformBonus",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
                 "value": "CacheSouris"
               },
               "parameters": [
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
-              },
-              "parameters": [
-                "SceneTransition",
-                "FlashTransitionPainter",
-                "\"9;14;44\"",
-                ".5",
-                "\"Circular\"",
-                "\"Backward\"",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlipX"
-              },
-              "parameters": [
-                "CursorPointer",
-                "Flippable",
-                "yes"
               ]
             },
             {
@@ -8997,11 +9542,27 @@
             },
             {
               "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                "value": "FlashTransitionPainter::FlashTransitionPainter::PaintEffect"
               },
               "parameters": [
-                "Water",
-                "Animation"
+                "SceneTransition",
+                "FlashTransitionPainter",
+                "\"9;14;44\"",
+                ".5",
+                "\"Circular\"",
+                "\"Backward\"",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "CursorPointer",
+                "Flippable",
+                "yes"
               ]
             },
             {
@@ -9109,6 +9670,7 @@
           "colorG": 58,
           "colorR": 91,
           "creationTime": 0,
+          "folded": true,
           "name": "Score",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9203,6 +9765,7 @@
           "colorG": 129,
           "colorR": 42,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9398,6 +9961,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Weapon behaviour",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9516,6 +10080,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Player damage",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9826,10 +10391,357 @@
           "parameters": []
         },
         {
+          "colorB": 48,
+          "colorG": 185,
+          "colorR": 40,
+          "creationTime": 0,
+          "name": "Bonuses",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreAutourPos"
+                  },
+                  "parameters": [
+                    "LeftPlatformBonus",
+                    "Balance.PointX(\"LeftBonus\")",
+                    "Balance.PointY(\"LeftBonus\")",
+                    "0",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreAutourPos"
+                  },
+                  "parameters": [
+                    "RightPlatformBonus",
+                    "Balance.PointX(\"RightBonus\")",
+                    "Balance.PointY(\"RightBonus\")",
+                    "0",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "healthBonus",
+                    "\"isOnScene\"",
+                    ">=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "healthBonus",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "bonuses",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "LeftPlatform",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "LeftPlatformBonus",
+                        "currentBonus",
+                        "=",
+                        "bonuses.VariableString(BonusName)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "LeftPlatformBonus",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "LeftPlatformBonus",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "bonuses",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "RightPlatform",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "RightPlatformBonus",
+                        "currentBonus",
+                        "=",
+                        "bonuses.VariableString(BonusName)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangeSprite"
+                      },
+                      "parameters": [
+                        "RightPlatformBonus",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "RightPlatformBonus",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "bonuses",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Right\""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "LeftPlatform",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "LeftPlatformBonus",
+                        "currentBonus",
+                        "=",
+                        "\"health\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetHealth"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "8",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "LeftPlatformBonus",
+                        "currentBonus",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "LeftPlatformBonus"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PlatformBehavior::IsObjectOnGivenFloor"
+                      },
+                      "parameters": [
+                        "Player",
+                        "PlatformerObject",
+                        "RightPlatform",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarObjetTxt"
+                      },
+                      "parameters": [
+                        "RightPlatformBonus",
+                        "currentBonus",
+                        "=",
+                        "\"health\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::SetHealth"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "8",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjetTxt"
+                      },
+                      "parameters": [
+                        "RightPlatformBonus",
+                        "currentBonus",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "RightPlatformBonus"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
           "colorB": 147,
           "colorG": 170,
           "colorR": 71,
           "creationTime": 0,
+          "folded": true,
           "name": "Platforms",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9839,6 +10751,7 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
+              "folded": true,
               "name": "Platforms movement",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9937,6 +10850,7 @@
               "colorG": 196,
               "colorR": 92,
               "creationTime": 0,
+              "folded": true,
               "name": "Platforms switchers",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10173,6 +11087,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy01 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10342,6 +11257,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy01 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -10570,6 +11486,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy02 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11327,6 +12244,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy03 spawn",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -11529,6 +12447,7 @@
               "colorG": 97,
               "colorR": 224,
               "creationTime": 0,
+              "folded": true,
               "name": "Enemy03 attack",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -12020,11 +12939,63 @@
                     },
                     {
                       "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemy01",
+                        "lootBonus",
+                        "=",
+                        "RandomInRange(0,10)"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Delete"
                       },
                       "parameters": [
                         "Enemy01",
                         ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Enemy01",
+                            "lootBonus",
+                            "=",
+                            "10"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "healthBonus",
+                            "Enemy01.CenterX()",
+                            "Enemy01.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "healthBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -12056,11 +13027,63 @@
                     },
                     {
                       "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Enemy02",
+                        "lootBonus",
+                        "=",
+                        "RandomInRange(0,15)"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Delete"
                       },
                       "parameters": [
                         "Enemy02",
                         ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Enemy02",
+                            "lootBonus",
+                            "=",
+                            "15"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "healthBonus",
+                            "Enemy02.CenterX()",
+                            "Enemy02.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "healthBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
                       ]
                     }
                   ]
