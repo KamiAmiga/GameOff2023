@@ -1134,6 +1134,33 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tutorialPanel00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tutorialPanel00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tutorialPanel01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tutorialPanel01.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tutorialArrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\tutorialArrow.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1172,7 +1199,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.32517382050855653,
+        "zoomFactor": 0.5683676358851942,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1284,7 +1311,7 @@
           "persistentUuid": "e58f8676-c00c-408e-a906-e829da99eecf",
           "width": 0,
           "x": 1705,
-          "y": 199,
+          "y": 174,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -1299,7 +1326,7 @@
           "persistentUuid": "c5299a72-4cb9-43b9-abf5-7c4776ea7808",
           "width": 0,
           "x": 1705,
-          "y": 365,
+          "y": 323,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -1314,7 +1341,7 @@
           "persistentUuid": "b6db6530-21b3-4fd5-8462-031c1e97c578",
           "width": 0,
           "x": 1705,
-          "y": 540,
+          "y": 487,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -1346,6 +1373,51 @@
           "x": 1474,
           "y": -115,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "TutoStep4",
+          "persistentUuid": "e7c410a8-4aee-4fdb-a61d-2e741c4522fa",
+          "width": 0,
+          "x": 1506,
+          "y": 479,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "TutoArrowNext",
+          "persistentUuid": "54dd8d02-eb30-47ed-a950-19b69a0b0182",
+          "width": 0,
+          "x": 1872,
+          "y": 612,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "TutoArrowPrev",
+          "persistentUuid": "ea76eaab-24b1-466e-a587-2df1f2458988",
+          "width": 0,
+          "x": 1708,
+          "y": 614,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1644,7 +1716,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\tutorialPanel.png",
+                      "image": "assets\\tutorialPanel00.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1664,16 +1736,52 @@
                             "y": 0
                           },
                           {
-                            "x": 554,
+                            "x": 725,
                             "y": 0
                           },
                           {
-                            "x": 554,
-                            "y": 668
+                            "x": 725,
+                            "y": 685
                           },
                           {
                             "x": 0,
-                            "y": 668
+                            "y": 685
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\tutorialPanel01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 725,
+                            "y": 0
+                          },
+                          {
+                            "x": 725,
+                            "y": 685
+                          },
+                          {
+                            "x": 0,
+                            "y": 685
                           }
                         ]
                       ]
@@ -1831,6 +1939,182 @@
           "absoluteCoordinates": false,
           "clearBetweenFrames": true,
           "antialiasing": "none"
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TutoStep4",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Killing enemies may grant you bonuses !\nClick on them to store them on one side of the balance\nand use \"Down\" key to release their power.",
+          "font": "assets\\Nunito-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 24,
+          "color": {
+            "b": 65,
+            "g": 22,
+            "r": 5
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TutoArrowNext",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\tutorialArrow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 43
+                          },
+                          {
+                            "x": 0,
+                            "y": 43
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TutoArrowPrev",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\tutorialArrow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 0
+                          },
+                          {
+                            "x": 26,
+                            "y": 43
+                          },
+                          {
+                            "x": 0,
+                            "y": 43
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1864,10 +2148,19 @@
             "objectName": "TutoStep3"
           },
           {
+            "objectName": "TutoStep4"
+          },
+          {
             "objectName": "CloseTutorial"
           },
           {
             "objectName": "SceneTransition"
+          },
+          {
+            "objectName": "TutoArrowNext"
+          },
+          {
+            "objectName": "TutoArrowPrev"
           }
         ]
       },
@@ -1905,6 +2198,41 @@
                 "yes",
                 "80",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "TutoArrowPrev",
+                "Flippable",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoStep4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoArrowPrev"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "TutorialPanel",
+                "Animation"
               ]
             }
           ]
@@ -2041,6 +2369,78 @@
                 "1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "TutoStep4",
+                "Tween",
+                "\"SlideIn\"",
+                "TutoStep4.X() - 900",
+                "\"easeInOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "TutoArrowPrev",
+                "Tween",
+                "\"SlideIn\"",
+                "TutoArrowPrev.X() - 900",
+                "\"easeInOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "TutoArrowNext",
+                "Tween",
+                "\"SlideIn\"",
+                "TutoArrowNext.X() - 900",
+                "\"easeInOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "TutorialPanel",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartButton",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "TutoButton",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -2127,6 +2527,240 @@
                 "\"easeInOutCubic\"",
                 "1",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "TutoStep4",
+                "Tween",
+                "\"SlideIn\"",
+                "TutoStep4.X() + 900",
+                "\"easeInOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "TutoArrowNext",
+                "Tween",
+                "\"SlideIn\"",
+                "TutoArrowNext.X() + 900",
+                "\"easeInOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+              },
+              "parameters": [
+                "TutoArrowPrev",
+                "Tween",
+                "\"SlideIn\"",
+                "TutoArrowPrev.X() + 900",
+                "\"easeInOutCubic\"",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "StartButton",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "TutoButton",
+                "yes",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "TutoArrowNext",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "TutoArrowNext"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "TutorialPanel",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoStep1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoStep2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoStep3"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoArrowNext"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TutoStep4",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TutoArrowPrev",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "TutoArrowPrev",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "TutoArrowPrev"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "TutorialPanel",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TutoStep1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TutoStep2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TutoStep3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "TutoArrowNext",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoStep4"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "TutoArrowPrev"
               ]
             }
           ]
