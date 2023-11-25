@@ -1097,6 +1097,24 @@
         "name": "assets\\balanceIced.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/scalePlateShell00.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\scalePlateShell00.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/scalePlateShell01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\scalePlateShell01.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2257,10 +2275,13 @@
           "name": "bonuses",
           "objects": [
             {
-              "name": "healthBonus"
+              "name": "HealthBonus"
             },
             {
-              "name": "iceBonus"
+              "name": "IceBonus"
+            },
+            {
+              "name": "ShellBonus"
             }
           ]
         }
@@ -3049,7 +3070,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -3059,6 +3080,101 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\scalePlate.png",
+                      "points": [
+                        {
+                          "name": "Switcher",
+                          "x": 396,
+                          "y": 245
+                        },
+                        {
+                          "name": "PlayerSpawn",
+                          "x": 252,
+                          "y": 240
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 184,
+                        "y": 1
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 276
+                          },
+                          {
+                            "x": 366,
+                            "y": 276
+                          },
+                          {
+                            "x": 366,
+                            "y": 324
+                          },
+                          {
+                            "x": 2,
+                            "y": 324
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 266
+                          },
+                          {
+                            "x": 5,
+                            "y": 266
+                          },
+                          {
+                            "x": 5,
+                            "y": 275
+                          },
+                          {
+                            "x": 0,
+                            "y": 275
+                          }
+                        ],
+                        [
+                          {
+                            "x": 362,
+                            "y": 266
+                          },
+                          {
+                            "x": 367,
+                            "y": 266
+                          },
+                          {
+                            "x": 367,
+                            "y": 275
+                          },
+                          {
+                            "x": 362,
+                            "y": 275
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Shell",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\scalePlateShell01.png",
                       "points": [
                         {
                           "name": "Switcher",
@@ -3171,7 +3287,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -3181,6 +3297,101 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\scalePlate.png",
+                      "points": [
+                        {
+                          "name": "Switcher",
+                          "x": -30,
+                          "y": 245
+                        },
+                        {
+                          "name": "PlayerSpawn",
+                          "x": 110,
+                          "y": 240
+                        }
+                      ],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 184,
+                        "y": 1
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 276
+                          },
+                          {
+                            "x": 366,
+                            "y": 276
+                          },
+                          {
+                            "x": 366,
+                            "y": 324
+                          },
+                          {
+                            "x": 2,
+                            "y": 324
+                          }
+                        ],
+                        [
+                          {
+                            "x": 0,
+                            "y": 266
+                          },
+                          {
+                            "x": 5,
+                            "y": 266
+                          },
+                          {
+                            "x": 5,
+                            "y": 275
+                          },
+                          {
+                            "x": 0,
+                            "y": 275
+                          }
+                        ],
+                        [
+                          {
+                            "x": 362,
+                            "y": 266
+                          },
+                          {
+                            "x": 367,
+                            "y": 266
+                          },
+                          {
+                            "x": 367,
+                            "y": 275
+                          },
+                          {
+                            "x": 362,
+                            "y": 275
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Shell",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\scalePlateShell01.png",
                       "points": [
                         {
                           "name": "Switcher",
@@ -4057,7 +4268,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Water",
           "type": "Sprite",
@@ -4094,11 +4305,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 76
                           },
                           {
                             "x": 1380,
-                            "y": 0
+                            "y": 76
                           },
                           {
                             "x": 1380,
@@ -4130,119 +4341,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 76
                           },
                           {
                             "x": 1380,
-                            "y": 0
-                          },
-                          {
-                            "x": 1380,
-                            "y": 144
-                          },
-                          {
-                            "x": 0,
-                            "y": 144
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\water01.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1380,
-                            "y": 0
-                          },
-                          {
-                            "x": 1380,
-                            "y": 144
-                          },
-                          {
-                            "x": 0,
-                            "y": 144
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\water02.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1380,
-                            "y": 0
-                          },
-                          {
-                            "x": 1380,
-                            "y": 144
-                          },
-                          {
-                            "x": 0,
-                            "y": 144
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\water02.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1380,
-                            "y": 0
+                            "y": 76
                           },
                           {
                             "x": 1380,
@@ -4274,11 +4377,119 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 76
                           },
                           {
                             "x": 1380,
-                            "y": 0
+                            "y": 76
+                          },
+                          {
+                            "x": 1380,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\water02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 76
+                          },
+                          {
+                            "x": 1380,
+                            "y": 76
+                          },
+                          {
+                            "x": 1380,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\water02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 76
+                          },
+                          {
+                            "x": 1380,
+                            "y": 76
+                          },
+                          {
+                            "x": 1380,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\water01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 76
+                          },
+                          {
+                            "x": 1380,
+                            "y": 76
                           },
                           {
                             "x": 1380,
@@ -9049,7 +9260,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "healthBonus",
+          "name": "HealthBonus",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -9466,7 +9677,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "iceBonus",
+          "name": "IceBonus",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -9529,6 +9740,73 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ShellBonus",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "folded": true,
+              "name": "bonusName",
+              "type": "string",
+              "value": "shell"
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\shellBonus.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 1
+                          },
+                          {
+                            "x": 72,
+                            "y": 69
+                          },
+                          {
+                            "x": 1,
+                            "y": 69
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -9538,19 +9816,25 @@
             "objectName": "Player"
           },
           {
+            "objectName": "Weapon"
+          },
+          {
+            "objectName": "PlayerBullet"
+          },
+          {
+            "objectName": "CursorPointer"
+          },
+          {
+            "objectName": "Narwhal"
+          },
+          {
+            "objectName": "Balance"
+          },
+          {
             "objectName": "LeftPlatform"
           },
           {
             "objectName": "RightPlatform"
-          },
-          {
-            "objectName": "Enemy01"
-          },
-          {
-            "objectName": "Enemy02"
-          },
-          {
-            "objectName": "Enemy03"
           },
           {
             "objectName": "RightPlatformSwitcher"
@@ -9559,13 +9843,25 @@
             "objectName": "LeftPlatformSwitcher"
           },
           {
-            "objectName": "Water"
+            "objectName": "LeftPlatformBonus"
           },
           {
-            "objectName": "Weapon"
+            "objectName": "RightPlatformBonus"
           },
           {
-            "objectName": "PlayerBullet"
+            "objectName": "Enemy01"
+          },
+          {
+            "objectName": "Enemy02"
+          },
+          {
+            "objectName": "Enemy02Bullet"
+          },
+          {
+            "objectName": "Enemy03"
+          },
+          {
+            "objectName": "Enemy03Laser"
           },
           {
             "objectName": "Enemy01Spawn"
@@ -9577,43 +9873,28 @@
             "objectName": "Enemy03Spawn"
           },
           {
-            "objectName": "Enemy02Bullet"
+            "objectName": "HealthBonus"
+          },
+          {
+            "objectName": "IceBonus"
+          },
+          {
+            "objectName": "ShellBonus"
           },
           {
             "objectName": "Score"
           },
           {
-            "objectName": "Enemy03Laser"
+            "objectName": "LifeCounter"
           },
           {
-            "objectName": "CursorPointer"
+            "objectName": "Water"
           },
           {
             "objectName": "Background"
           },
           {
-            "objectName": "Narwhal"
-          },
-          {
-            "objectName": "Balance"
-          },
-          {
-            "objectName": "LifeCounter"
-          },
-          {
             "objectName": "SceneTransition"
-          },
-          {
-            "objectName": "healthBonus"
-          },
-          {
-            "objectName": "LeftPlatformBonus"
-          },
-          {
-            "objectName": "RightPlatformBonus"
-          },
-          {
-            "objectName": "iceBonus"
           }
         ]
       },
@@ -10762,7 +11043,7 @@
                                 "LeftPlatformBonus",
                                 "currentBonus",
                                 "=",
-                                "healthBonus.VariableString(bonusName)"
+                                "HealthBonus.VariableString(bonusName)"
                               ]
                             }
                           ],
@@ -10790,7 +11071,7 @@
                                 "LeftPlatformBonus",
                                 "currentBonus",
                                 "=",
-                                "iceBonus.VariableString(bonusName)"
+                                "IceBonus.VariableString(bonusName)"
                               ]
                             }
                           ],
@@ -10803,6 +11084,34 @@
                                 "LeftPlatformBonus",
                                 "=",
                                 "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "ShellBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "=",
+                                "3"
                               ]
                             }
                           ]
@@ -10867,7 +11176,7 @@
                                 "RightPlatformBonus",
                                 "currentBonus",
                                 "=",
-                                "healthBonus.VariableString(bonusName)"
+                                "HealthBonus.VariableString(bonusName)"
                               ]
                             }
                           ],
@@ -10895,7 +11204,7 @@
                                 "RightPlatformBonus",
                                 "currentBonus",
                                 "=",
-                                "iceBonus.VariableString(bonusName)"
+                                "IceBonus.VariableString(bonusName)"
                               ]
                             }
                           ],
@@ -10914,8 +11223,31 @@
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": []
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "ShellBonus.VariableString(bonusName)"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ChangeSprite"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "=",
+                                "3"
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -11036,6 +11368,35 @@
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "LeftPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"shell\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "LeftPlatform",
+                                "Animation",
+                                "=",
+                                "\"Shell\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [],
                           "actions": [
                             {
@@ -11143,6 +11504,35 @@
                                 "Animation",
                                 "=",
                                 "\"Iced\""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarObjetTxt"
+                              },
+                              "parameters": [
+                                "RightPlatformBonus",
+                                "currentBonus",
+                                "=",
+                                "\"shell\""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "RightPlatform",
+                                "Animation",
+                                "=",
+                                "\"Shell\""
                               ]
                             }
                           ]
@@ -11311,6 +11701,82 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "LeftPlatform",
+                        "Animation"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "LeftPlatform",
+                        "Animation",
+                        "=",
+                        "\"Shell\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "LeftPlatform",
+                        "Animation",
+                        "=",
+                        "\"Default\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+                      },
+                      "parameters": [
+                        "RightPlatform",
+                        "Animation"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "RightPlatform",
+                        "Animation",
+                        "=",
+                        "\"Shell\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "RightPlatform",
+                        "Animation",
+                        "=",
+                        "\"Default\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "PlatformBehavior::IsObjectOnGivenFloor"
                       },
                       "parameters": [
@@ -11319,28 +11785,96 @@
                         "LeftPlatform",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Balance",
-                        "Animation",
-                        "!=",
-                        "\"Iced\""
-                      ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Rotate"
-                      },
-                      "parameters": [
-                        "Balance",
-                        "min(-1,-.3 - (Wave * .075))",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Balance",
+                            "Animation",
+                            "!=",
+                            "\"Iced\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Rotate"
+                          },
+                          "parameters": [
+                            "Balance",
+                            "max(-1,-.3 - (Wave * .075))",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "LeftPlatform",
+                            "Animation",
+                            "=",
+                            "\"Shell\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::SetChanceToDodgeOp"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "=",
+                            "1",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "LeftPlatform",
+                            "Animation",
+                            "!=",
+                            "\"Shell\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::SetChanceToDodgeOp"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "=",
+                            "0",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -11358,28 +11892,96 @@
                         "RightPlatform",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Name"
-                      },
-                      "parameters": [
-                        "Balance",
-                        "Animation",
-                        "!=",
-                        "\"Iced\""
-                      ]
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "value": "Rotate"
-                      },
-                      "parameters": [
-                        "Balance",
-                        "max(1, .3 + (Wave * .075))",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "Balance",
+                            "Animation",
+                            "!=",
+                            "\"Iced\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Rotate"
+                          },
+                          "parameters": [
+                            "Balance",
+                            "min(1, .3 + (Wave * .075))",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "RightPlatform",
+                            "Animation",
+                            "=",
+                            "\"Shell\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::SetChanceToDodgeOp"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "=",
+                            "1",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "RightPlatform",
+                            "Animation",
+                            "!=",
+                            "\"Shell\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::SetChanceToDodgeOp"
+                          },
+                          "parameters": [
+                            "Player",
+                            "Health",
+                            "=",
+                            "0",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -13519,7 +14121,7 @@
                           },
                           "parameters": [
                             "",
-                            "healthBonus",
+                            "HealthBonus",
                             "Enemy01.CenterX()",
                             "Enemy01.CenterY()",
                             ""
@@ -13530,7 +14132,7 @@
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
-                            "healthBonus",
+                            "HealthBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -13558,7 +14160,7 @@
                           },
                           "parameters": [
                             "",
-                            "iceBonus",
+                            "IceBonus",
                             "Enemy01.CenterX()",
                             "Enemy01.CenterY()",
                             ""
@@ -13569,7 +14171,7 @@
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
-                            "iceBonus",
+                            "IceBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -13646,7 +14248,7 @@
                           },
                           "parameters": [
                             "",
-                            "healthBonus",
+                            "HealthBonus",
                             "Enemy02.CenterX()",
                             "Enemy02.CenterY()",
                             ""
@@ -13657,7 +14259,7 @@
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
-                            "healthBonus",
+                            "HealthBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -13704,7 +14306,7 @@
                           },
                           "parameters": [
                             "",
-                            "iceBonus",
+                            "IceBonus",
                             "Enemy02.CenterX()",
                             "Enemy02.CenterY()",
                             ""
@@ -13715,7 +14317,46 @@
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
-                            "iceBonus",
+                            "IceBonus",
+                            "\"isOnScene\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Enemy02",
+                            "lootBonus",
+                            "=",
+                            "3"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "ShellBonus",
+                            "Enemy02.CenterX()",
+                            "Enemy02.CenterY()",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetObjectTimer"
+                          },
+                          "parameters": [
+                            "ShellBonus",
                             "\"isOnScene\""
                           ]
                         }
@@ -13810,7 +14451,7 @@
                           },
                           "parameters": [
                             "",
-                            "healthBonus",
+                            "HealthBonus",
                             "Enemy03.CenterX()",
                             "Enemy03.CenterY()",
                             ""
@@ -13821,7 +14462,7 @@
                             "value": "ResetObjectTimer"
                           },
                           "parameters": [
-                            "healthBonus",
+                            "HealthBonus",
                             "\"isOnScene\""
                           ]
                         }
