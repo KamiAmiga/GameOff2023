@@ -12,9 +12,14 @@ In a 2D arena, defeat **the waves of your fish enemies**. Be careful though : yo
 - old fashioned pen and paper
 
 ## How to play
-- Use arrow keys to move on the platforms
-- Jump to the next scale plate with arrow key "Up" when you reach its border
+- Use "Left" and "Right" keys to move on the platforms
+- Jump to the next scale plate with key "Up" when you reach its border
 - Shoot bullets towards your cursor with left mouse button
+- Store bonuses on one side of the balance with left mouse button. Those are left by the enemies when you kill them
+- Use the bonuses you've stored using "Down" key
 
-## Installation
-TBD
+## Resources
+I used some open source music and sound effects from GDevelop resources library and Pixabay :
+  - music Baltic Levity from GDevelop resources library
+  - sound effects Hit 3, Hit 5 and Woosh 1 from GDevelop resources library
+  - Waves sound from Pixabay
