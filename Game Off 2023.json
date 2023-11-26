@@ -16,7 +16,7 @@
     "pixelsRounding": false,
     "projectUuid": "83b1718c-bbe3-4a59-9c5e-837fc3417cf3",
     "scaleMode": "linear",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "A:\\jeux\\FishAndShift-2023_11_22_01",
+    "latestCompilationDirectory": "A:\\jeux\\FishAndShift-2023_11_26_01",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1488,27 +1488,6 @@
           }
         },
         {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "Credits",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Credits",
-          "font": "assets\\Nunito-ExtraBold.ttf",
-          "textAlignment": "left",
-          "characterSize": 24,
-          "color": {
-            "b": 65,
-            "g": 22,
-            "r": 5
-          }
-        },
-        {
           "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
           "name": "TutoButton",
           "type": "PanelSpriteButton::PanelSpriteButton",
@@ -2127,9 +2106,6 @@
             "objectName": "TutoButton"
           },
           {
-            "objectName": "Credits"
-          },
-          {
             "objectName": "Background"
           },
           {
@@ -2178,16 +2154,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "MettreX"
-              },
-              "parameters": [
-                "Credits",
-                "=",
-                "ScreenWidth() - 92 - Credits.Width()"
-              ]
-            },
             {
               "type": {
                 "value": "PlaySound"
@@ -10708,6 +10674,18 @@
           "actions": [
             {
               "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Background",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "Cache"
               },
               "parameters": [
@@ -10771,9 +10749,9 @@
               "parameters": [
                 "Background",
                 "=",
-                "ScreenWidth()/2",
+                "SceneWindowWidth()/2",
                 "=",
-                "ScreenHeight()/2"
+                "SceneWindowHeight()/2"
               ]
             },
             {
@@ -10783,7 +10761,7 @@
               "parameters": [
                 "Water",
                 "=",
-                "ScreenWidth()/2"
+                "SceneWindowWidth()/2"
               ]
             },
             {
@@ -10793,7 +10771,7 @@
               "parameters": [
                 "Narwhal",
                 "=",
-                "ScreenWidth()/2"
+                "SceneWindowWidth()/2"
               ]
             },
             {
@@ -10803,7 +10781,19 @@
               "parameters": [
                 "Balance",
                 "=",
-                "ScreenWidth()/2"
+                "SceneWindowWidth()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "RightPlatform.PointX(\"PlayerSpawn\")",
+                "=",
+                "RightPlatform.PointY(\"PlayerSpawn\")"
               ]
             },
             {
@@ -12239,8 +12229,8 @@
                               "parameters": [
                                 "",
                                 "ElectricShockwave",
-                                "ScreenWidth()/2",
-                                "ScreenHeight()/2",
+                                "SceneWindowWidth()/2",
+                                "SceneWindowHeight()/2",
                                 ""
                               ]
                             },
@@ -12464,8 +12454,8 @@
                               "parameters": [
                                 "",
                                 "ElectricShockwave",
-                                "ScreenWidth()/2",
-                                "ScreenHeight()/2",
+                                "SceneWindowWidth()/2",
+                                "SceneWindowHeight()/2",
                                 ""
                               ]
                             },
@@ -13751,7 +13741,7 @@
                           "parameters": [
                             "Enemy02Spawn",
                             "<",
-                            "ScreenWidth()/2"
+                            "SceneWindowWidth()/2"
                           ]
                         }
                       ],
@@ -13811,7 +13801,7 @@
                           "parameters": [
                             "Enemy02Spawn",
                             ">",
-                            "ScreenWidth()/2"
+                            "SceneWindowWidth()/2"
                           ]
                         }
                       ],
@@ -14106,7 +14096,7 @@
                       "parameters": [
                         "Enemy02Bullet",
                         "<",
-                        "ScreenWidth()/2"
+                        "SceneWindowWidth()/2"
                       ]
                     }
                   ],
@@ -14162,7 +14152,7 @@
                       "parameters": [
                         "Enemy02Bullet",
                         ">",
-                        "ScreenWidth()/2"
+                        "SceneWindowWidth()/2"
                       ]
                     }
                   ],
